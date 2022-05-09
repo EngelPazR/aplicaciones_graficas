@@ -4,8 +4,54 @@
 
 .form-section {
   background-color: white;
+  border-radius: 20px;
 }
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+.icon i{
+  color: black; 
+}
+
+.icon img{
+  width: 10rem;
+}
+
+
+.body-registro{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.nav{
+  display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+
 
 a {
   text-decoration: none;
 }
+article{
+  width: 100%;
+  height: 120px;
+  background: url("../images/v118_1797.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  display: block;
+
+}
+
