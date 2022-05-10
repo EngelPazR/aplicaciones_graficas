@@ -1,0 +1,47 @@
+[33mcommit 9d05a47e78ff213b9f051bd1b4176d05a026829b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: maycoll jaramillo <Maycolljaramillo01@gmail.com>
+Date:   Mon May 9 16:22:34 2022 -0600
+
+    agregados bases de estilos en login,
+
+[33mcommit 45867ddc1e02c19cd5eeca348b9da461c7251d15[m
+Author: mayerfonseca <fonsecamayer2@gmail.com>
+Date:   Sun May 8 19:17:09 2022 -0600
+
+    cambiando nombre carpeta css
+
+[33mcommit 9bf3f95c7c1fcb3821c07884497cf957ef605c85[m
+Author: mayerfonseca <fonsecamayer2@gmail.com>
+Date:   Sun May 8 19:09:02 2022 -0600
+
+    Subiendo css del index
+
+[33mcommit f731585d1d03dba5ce3f5a88e19ab8dd99314234[m
+Author: Engel Josue Paz Rodriguez <engelpazrodriguez@gmail.com>
+Date:   Fri May 6 23:59:13 2022 +0200
+
+    Se agrego el nav a la ventana de la desripcion de producto
+
+[33mcommit a0708a94305d5baa723fdc7b894fc1a86290b2e9[m
+Author: Engel Josue Paz Rodriguez <engelpazrodriguez@gmail.com>
+Date:   Fri May 6 22:54:34 2022 +0200
+
+    Creacion de la ventana de descripcion del producto
+
+[33mcommit bbd9c1d30f3bd9a7e3ae752eafa3c94d7b1b0991[m
+Author: Engel Josue Paz Rodriguez <engelpazrodriguez@gmail.com>
+Date:   Wed May 4 17:22:32 2022 -0600
+
+    Primeros cambios, se agregaron ventanas modales de recuperacion de contraseña, y otras cosas
+
+[33mcommit c17ec7a18f4cc2c7a3d9f3eeb8f7666543c9a7b5[m
+Author: Engel Josue Paz Rodriguez <engelpazrodriguez@gmail.com>
+Date:   Wed May 4 16:31:55 2022 -0600
+
+    Primeros archivos del proyecto
+
+[33mcommit 8c80049a5b786d3213f05723649be785b3381249[m
+Author: EngelPazR <102498009+EngelPazR@users.noreply.github.com>
+Date:   Tue May 3 20:27:13 2022 -0600
+
+    Initial commit
