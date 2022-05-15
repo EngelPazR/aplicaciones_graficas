@@ -1,0 +1,36 @@
+/*General*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1rem = 10px*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.inputlogo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.encabezado {
+    margin-left: 2rem;
+}

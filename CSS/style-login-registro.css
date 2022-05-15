@@ -1,57 +1,23 @@
-.body-registro{
-  background-color: #8572b6;
-}
-
-.form-section {
-  background-color: white;
-  border-radius: 20px;
-}
-
-.icon{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    padding: 0;
-}
-.icon i{
-  color: black; 
-}
-
-.icon img{
-  width: 10rem;
-}
-
-
-.body-registro{
-    width: 95%;
-    margin: 0 auto;
-}
-
-.nav{
-  display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-
-
-a {
-  text-decoration: none;
-}
-article{
-  width: 100%;
-  height: 120px;
-  background: url("../images/v118_1797.png");
+.fondo{
+  background-color: #E38352;
+  background-image: url('../img/fondologin.png');
   background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  display: block;
-
+  background-size: 98% 95%;
+  background-position: center center;
+  height: 87vh;
+  display: flex;
+  align-items: center;
 }
 
+.form-section{
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  height: 80%;
+  padding: 5rem;
+}
+
+
+.foot{
+  margin-top: 0rem;
+}
