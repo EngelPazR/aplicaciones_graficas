@@ -1,0 +1,114 @@
+.fondo{
+  background-color: #E38352;
+  background-image: url('../img/fondologin.png');
+  background-repeat: no-repeat;
+  background-size: 98% 95%;
+  background-position: center center;
+  height: 87vh;
+  display: flex;
+  align-items: center;
+}
+
+.form-section{
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  height: 80%;
+  padding: 5rem;
+  position: relative;
+}
+
+.form-section h1{
+  text-align: center;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  width: 33rem;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.formulario input{
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.formulario input[type="submit"]{
+  background-color: #FF95B9;
+  font-weight: bold;
+
+}
+
+.formulario input[type="submit"]:hover{
+  cursor: pointer;
+}
+
+.derecha{
+  text-align: right;
+}
+
+.inicios{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.barras{
+  text-align: center;
+}
+
+.barras::before{
+  content: "                    ";
+  white-space: pre;
+  text-decoration: underline;
+  text-decoration-color:  #A39797;
+}
+
+
+.barras::after{
+  text-decoration: underline;
+  text-decoration-color:  #A39797;
+  content: "                    ";
+  white-space: pre;
+}
+
+.inicios a{
+  height: 4rem;
+  width: 5rem;
+  box-shadow: 2px 2px 2px #ccc;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.foot{
+  margin-top: 0rem;
+}
+
+.semicirculo {
+  position: absolute;
+  height: 15rem;
+  width: 30rem;
+  border-radius: 0 0 15rem 15rem;
+  opacity: .4;
+  background-color: #FFC600;
+  top: 0;
+  left: 0;
+}
+
+.semicirculo2 {
+  position: absolute;
+  height: 13rem;
+  width: 25rem;
+  border-radius: 0 0 15rem 15rem;
+  opacity: .4;
+  background-color: #FFC600;
+  top: 0;
+  right: 75rem;
+}

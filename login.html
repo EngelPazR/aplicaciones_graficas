@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/headerfooter.css">
-  <link rel="stylesheet" href="/css/style-login-registro.css">
+  <link rel="stylesheet" href="/css/style-login.css">
   <title>Inicio de sesion</title>
 </head>
 
@@ -46,28 +46,37 @@
   </header>
 
   <div class="fondo">
+    
     <section class="form-section">
+
+      <div class="semicirculo"></div>
+      <div class="semicirculo2"></div>
+
       <label class="" for="">Inicio de sesion <i class="fa-solid fa-user"></i></label>
+
+
+
       <h1>Elite Store</h1>
+      <form action="" class="formulario">
 
-      <form action="">
-        <label for="usuario">Usuario:</label>
-        <input id="usuario" type="text" name="usuario" required pattern="^[A-Za-z]+$"
-          title="Por favor, ingrese unicamente letras">
-        <br><br>
 
-        <label for="Password">Contraseña:</label>
-        <input id="Password" autocomplete="off" type="Password" name="contraseña" required>
-        <br><br>
+        <input id="usuario" type="email" name="usuario" required pattern="^[A-Za-z]+$"
+          title="Por favor, ingrese unicamente letras" placeholder="Correo">
+
+        <input id="Password" autocomplete="off" type="Password" name="contraseña" required placeholder="Contraseña">
 
         <input type="submit" value="Ingresar">
-        
-        <a href="./restaurar-password1.html">Olvidé mi contraseña :(</a><br>
-        <label for="">O inicia sesión con</label> <br>
-        <a href=""><i class="fa-brands fa-google"></i></a>
-        <a href=""><i class="fa-brands fa-apple"></i></a></i>
-        <a href=""><i class="fa-brands fa-facebook"></i></a></i>
-        <label for="">¿Aún no te registras? <a href="./registro.html">Create una cuenta</a></label>
+
+        <a class="derecha" href="./restaurar-password1.html">Olvidé mi contraseña :(</a>
+        <label class="barras" for="">O inicia sesión con</label>
+
+        <div class="inicios">
+          <a href=""><i class="fa-brands fa-google fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-apple fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+        </div>
+
+        <label for="">¿Aún no te registras? <a href="Registro-Oficial.html">Create una cuenta</a></label>
       </form>
     </section>
   </div>
