@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito De Compras</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/img/Logo.png">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/style-carrito.css">
+</head>
+
+<body>
+    <!--Navegacion-->
+    <header>
+        <nav class="contenedor">
+            <ul class="icon" id="contact">
+                <div class="navflex">
+                    <li> <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a> </li>
+                    <li><i class="fa-brands fa-whatsapp fa-2x"></i></li>
+                    <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
+                    <li><label for="">+505 87899008</label></li>
+                </div>
+                <li><a href="index.html">
+                        <img src="./img/Logo.png" alt="logo">
+                    </a></li>
+                <div class="navflex">
+                    <li><a href="./login.html"><i class="fa-solid fa-circle-user fa-2x"></i></a></li>
+                    <li><i class="fa-solid fa-heart fa-2x"></i></i></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a></li>
+                    <div>
+                        <li class="inputlogo">
+                            <input type="text" class="inputborder">
+                            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                        </li>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <!--Carrito-->
+    <section class="contenedor">
+
+        <h1>Detalles carrito</h1>
+        <!--carrito de compras-->
+        <div class="carrito">
+            <div class="carrito__header">
+                <div class="">
+                    <h3></h3>
+                </div>
+
+                <div>
+                    <h3>Producto</h3>
+                </div>
+
+                <div>
+                    <h3>Precio</h3>
+                </div>
+
+                <div>
+                    <h3>Cantidad</h3>
+                </div>
+
+                <div>
+                    <h3>Subtotal</h3>
+                </div>
+            </div>
+
+            <!---productos-->
+            <div class="carrito__item">
+                <div class="eliminar">
+                    <button>
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="carrito__item__prod">
+                    <img src="img/panama-hats.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div>
+                    <p>$1.000</p>
+                </div>
+
+                <div class="botones">
+                    <button>
+                        -
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button>
+                        +
+                    </button>
+                </div>
+
+                <div>
+                    <p>$1.000</p>
+                </div>
+            </div>
+
+            <!---productos-->
+            <div class="carrito__item">
+                <div class="eliminar">
+                    <button>
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="carrito__item__prod">
+                    <img src="img/panama-hats.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div>
+                    <p>$1.000</p>
+                </div>
+
+                <div class="botones">
+                    <button>
+                        -
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button>
+                        +
+                    </button>
+                </div>
+
+                <div>
+                    <p>$1.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detallescarrito">
+        <!--canjear cupon-->
+        <div class="carrito__canjear">
+            <div class="carrito__canjear__form">
+                <form action="" method="get">
+                    <div class="carrito__canjear__form__input">
+                        <input type="text" name="cupon" placeholder="Voucher Code" />
+
+                        <button class="btncarrito" type="button">
+                            Canjear
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--total subtotal-->
+        <div class="carrito__total">
+
+            <div class="carrito__total__dato">
+                <p>Subtotal</p>
+                <p>$100</p>
+            </div>
+
+            <div class="carrito__total__dato">
+                <p>Envio</p>
+                <p>$100</p>
+            </div>
+
+            <div class="carrito__total__dato">
+                <p>Cupon</p>
+                <p>$0</p>
+            </div>
+
+            <div class="carrito__total__dato total">
+                <p>Total</p>
+                <p>$100</p>
+            </div>
+
+            <div class="carrito__total__boton">
+                <button type="button" class="btncarrito" id="open">
+                    Comprar
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <footer class="foot">
+        <address class="direccion">
+            <img src="./img/Logo.png" alt="">
+            <span><i class="fa-solid fa-location-dot"></i>Phuongmadethis</span>
+            <span><br><br> Barrio Maximo Ordoñez
+                <br> Contiguo al cine antiguo
+                <br> United States</span>
+        </address>
+
+        <ul class="enlacesfoot">
+            <div class="enlacesfoot__pages">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Costumer Service</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">FQA</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+            <div class="enlacesfoot__use">
+                <li><a href="#">Terminos de Uso</a></li>
+                <li></li>
+                <li><a href="#">Política de Privacidad</a></li>
+            </div>
+            <div class="copyright">
+                <li>Copyright @ Pandelimon 2022</li>
+            </div>
+        </ul>
+
+    </footer>
+</body>
+
+</html>
