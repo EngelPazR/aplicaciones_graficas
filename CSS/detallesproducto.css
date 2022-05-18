@@ -1,0 +1,92 @@
+.fondotrapecio{
+    background-image: url('../img/trapecio-lila.jpg.png');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.detallescontenedor{
+    width: 80%;
+}
+
+.imagenproducto img{
+    height: 100%;
+    width: 40rem;
+    padding: 5rem;
+    margin: 0 auto;
+}
+
+.star-rate{
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.star-rate p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.star-rate__logos{
+    display: flex;
+}
+
+.flexdatos{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.flexdatos h2{
+    text-align: center;
+}
+
+.textdatos{
+    font-size: 2rem;
+}
+
+.price > span{
+    color: #ff0000;
+    font-size: 1.5rem;
+}
+
+#cantidad{
+    width: 8rem;
+}
+
+.flexdatos button{
+    width: 20rem;
+    color: #fff;
+    background-color: #1D2223;
+    height: 5rem;
+    box-shadow:  0.2rem 0.2rem #c8c1c1;
+}
+
+.flexdatos button:hover{
+    cursor: pointer;
+}
+
+.descripcionesproducto{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.descripcionesproducto__texto{
+    text-align: justify;
+    margin-left: 2rem;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.descripcionesproducto__bordes{
+    text-align: justify;
+    margin-left: 2rem;
+    border: 0.1rem solid #ccc;
+    padding: 0.5rem;
+}
