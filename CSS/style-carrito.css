@@ -111,3 +111,9 @@ button i{
     color: white;
     font-weight: bold;
 }
+
+.carrito__total__boton button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

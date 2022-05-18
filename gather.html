@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <!--navegacion-->
+  <!--Navegacion-->
   <header>
     <nav class="contenedor">
       <ul class="icon" id="contact">
@@ -32,15 +32,23 @@
           <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
           <li><label for="">+505 87899008</label></li>
         </div>
-        <li><img src="./img/Logo.png" alt="logo"></li>
+        <li><a href="index.html">
+            <img src="./img/Logo.png" alt="logo">
+          </a></li>
         <div class="navflex">
           <li><a href="./login.html"><i class="fa-solid fa-circle-user fa-2x"></i></a></li>
-          <li><i class="fa-solid fa-heart fa-2x"></i></i></li>
-          <li><i class="fa-solid fa-cart-arrow-down fa-2x"></i></li>
+          <li>
+            <a href="favoritos.html">
+              <i class="fa-solid fa-heart fa-2x"></i>
+            </a>
+          </li>
+          <li><a href="carrito.html"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a></li>
           <div>
             <li class="inputlogo">
               <input type="text" class="inputborder">
-              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <a href="product.-list.html">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              </a>
             </li>
           </div>
         </div>
@@ -65,8 +73,16 @@
         <textarea class="textareadireecion" name="" id="" placeholder="Direccion"></textarea>
 
         <div class="botonesgather">
-          <button type="submit" name="" id="" >Realizar Compra</button>
-          <button type="reset" name="" id="">Cancelar</button>
+          <button type="submit" name="" id="">
+            <a href="payment.html">
+              Realizar Compra
+            </a>
+          </button>
+          <button type="reset" name="" id="">
+            <a href="carrito.html">
+              Cancelar
+            </a>
+          </button>
         </div>
       </div>
     </div>

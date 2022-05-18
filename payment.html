@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="/css/payment.css">
 
-    
+
 </head>
 
 <body>
-    <!--navegacion-->
+    <!--Navegacion-->
     <header>
         <nav class="contenedor">
             <ul class="icon" id="contact">
@@ -31,15 +31,23 @@
                     <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
                     <li><label for="">+505 87899008</label></li>
                 </div>
-                <li><img src="./img/Logo.png" alt="logo"></li>
+                <li><a href="index.html">
+                        <img src="./img/Logo.png" alt="logo">
+                    </a></li>
                 <div class="navflex">
                     <li><a href="./login.html"><i class="fa-solid fa-circle-user fa-2x"></i></a></li>
-                    <li><i class="fa-solid fa-heart fa-2x"></i></i></li>
-                    <li><i class="fa-solid fa-cart-arrow-down fa-2x"></i></li>
+                    <li>
+                        <a href="favoritos.html">
+                            <i class="fa-solid fa-heart fa-2x"></i>
+                        </a>
+                    </li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a></li>
                     <div>
                         <li class="inputlogo">
                             <input type="text" class="inputborder">
-                            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                            <a href="product.-list.html">
+                                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                            </a>
                         </li>
                     </div>
                 </div>
@@ -61,50 +69,50 @@
 
             <div class="content">
                 <div data-content id="mastercard" class="active">
-                   <form action="" class="formulariopago">
-                       <label for="tarjetamastercard">NUMERO DE TARJETA</label>
-                       <input type="text" name="" id="tarjetamastercard">
+                    <form action="" class="formulariopago">
+                        <label for="tarjetamastercard">NUMERO DE TARJETA</label>
+                        <input type="text" name="" id="tarjetamastercard">
 
-                       <label for="cedulamc">NUMERO DE CEDULA</label>
-                       <input type="text" name="" id="cedulamc">
+                        <label for="cedulamc">NUMERO DE CEDULA</label>
+                        <input type="text" name="" id="cedulamc">
 
-                       <div class="cvvfecha">
-                        <label for="cvvmc">CVV</label>
-                        <label for="fechamc">FECHA</label>
+                        <div class="cvvfecha">
+                            <label for="cvvmc">CVV</label>
+                            <label for="fechamc">FECHA</label>
 
-                        <input type="text" id="fechamc"> 
-                        <input type="text" id="cvvmc">
-                       </div>
+                            <input type="text" id="fechamc">
+                            <input type="text" id="cvvmc">
+                        </div>
 
-                      <div class="botonespayment">
-                        <button type="button">
-                            Realizar Compra
-                        </button>
- 
-                        <button type="reset">
-                            Cancelar
-                        </button>
-                      </div>
-                   </form>
+                        <div class="botonespayment">
+                            <button type="button">
+                                Realizar Compra
+                            </button>
+
+                            <button type="reset">
+                                Cancelar
+                            </button>
+                        </div>
+                    </form>
                 </div>
 
                 <div data-content id="paypal">
                     <form action="" class="formulariopago">
                         <label for="correpp">Correo:</label>
                         <input type="text" name="" id="correpp">
- 
+
                         <label for="contrasenapp">Contraseña</label>
                         <input type="password" name="" id="contrasenapp">
- 
-                       <div class="botonespayment">
-                         <button type="button">
-                             Realizar Compra
-                         </button>
-  
-                         <button type="reset">
-                             Cancelar
-                         </button>
-                       </div>
+
+                        <div class="botonespayment">
+                            <button type="button">
+                                Realizar Compra
+                            </button>
+
+                            <button type="reset">
+                                Cancelar
+                            </button>
+                        </div>
                     </form>
                 </div>
 
@@ -112,31 +120,31 @@
                     <form action="" class="formulariopago">
                         <label for="tarjetavisa">NUMERO DE TARJETA</label>
                         <input type="text" name="" id="tarjetavisa">
- 
+
                         <label for="cedulavisa">NUMERO DE CEDULA</label>
                         <input type="text" name="" id="cedulavisa">
- 
+
                         <div class="cvvfecha">
-                         <label for="cvvvisa">CVV</label>
-                         <label for="fechavisa">FECHA</label>
- 
-                         <input type="text" id="fechavisa"> 
-                         <input type="text" id="cvvvisa">
+                            <label for="cvvvisa">CVV</label>
+                            <label for="fechavisa">FECHA</label>
+
+                            <input type="text" id="fechavisa">
+                            <input type="text" id="cvvvisa">
                         </div>
- 
-                       <div class="botonespayment">
-                         <button type="button">
-                             Realizar Compra
-                         </button>
-  
-                         <button type="reset">
-                             Cancelar
-                         </button>
-                       </div>
+
+                        <div class="botonespayment">
+                            <button type="button">
+                                Realizar Compra
+                            </button>
+
+                            <button type="reset">
+                                Cancelar
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
-            
+
         </div>
     </div>
 

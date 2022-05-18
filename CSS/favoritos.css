@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+}
+
+.borde{
+    width: 100%;
+    border-top: #9ebd9e 0.1rem solid;
+}
+
+.favorito__item{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    border-bottom: #9ebd9e 0.1rem solid;
+    height: 25rem;
+}
+
+.favorito__item__img img{
+    width: 12rem;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+.favorito__item__text{
+    
+}
+
+.favorito__item__boton__carrito p{
+    color: #ff9900;
+    text-align: right;
+}
+
+.favorito__item__boton__carrito button{
+    background-color: #FF95B9;
+    color: white;
+    border-style: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.favorito__item__boton__carrito button:hover{
+    cursor: pointer;
+}
+
+.favorito__item__boton__borrar button{
+    background-color: white;
+    color: red;
+    border-style: none;
+}
+
+.favorito__item__boton__borrar button:hover{
+    cursor: pointer;
+}

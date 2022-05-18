@@ -1,0 +1,40 @@
+.title{
+    text-align: center;
+}
+
+.sangria{
+    /*poner sangria*/
+    margin-left: 8rem;
+}
+
+.btnenviar {
+    background-color: #e37c06;
+    color: white;
+    border-radius: 0.7rem;
+    width: 15rem;
+    margin: 0 auto;
+    height: 3rem;
+    border: none;
+    font-weight: bold;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20rem;
+    gap: 2rem;
+
+}
+
+.contacto__form{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  justify-content: space-between;
+}
+
+.contacto__form button{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
