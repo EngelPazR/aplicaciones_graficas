@@ -1,0 +1,100 @@
+.paymentcontenedor{
+    background-image: url('../img/trapecio-lila.jpg.png');
+    background-repeat: no-repeat;
+    background-size: 30% 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.fondo{
+    margin-top: 4rem;
+}
+
+.fondo img{
+   margin: 0 auto;
+}
+
+.fondo h2{
+    font-style: italic;
+    text-align: center;
+}
+
+
+.tabpanelcontenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tabpanel{
+   display: flex;
+   gap: 3rem;
+}
+
+.tabpanel img{
+    width: 6rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 2rem;
+}
+
+[data-content] {
+	display: none;
+}
+
+.active[data-content] {
+	display: block;
+}
+
+/*formulario*/
+
+.formulariopago{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1.5rem;
+   width: 50%;
+}
+
+.formulariopago input{
+    height: 4rem;
+    padding: 1rem;
+    border: 0.2rem solid #000;
+    border-radius: 0.8rem;
+    
+}
+
+.formulariopago label{
+    font-weight: bold;
+}
+
+.cvvfecha{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:  5rem;
+}
+
+
+.botonespayment{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.botonespayment button{
+    width: 20rem;
+	height: 4rem;
+    border-style: none;
+    background-color:  #FF95B9;
+    font-weight: bold;
+    border-radius: 0.8rem;
+}
+
+.botonespayment button:hover{
+    cursor: pointer;
+}
+
+.foot{
+    margin-top: 0;
+}
