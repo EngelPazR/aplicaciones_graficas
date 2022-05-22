@@ -17,7 +17,7 @@ h1{
 }
 
 .favorito__item__img img{
-    width: 12rem;
+    width: 18rem;
     height: 20rem;
     margin: 0 auto;
 }
@@ -51,4 +51,53 @@ h1{
 
 .favorito__item__boton__borrar button:hover{
     cursor: pointer;
+}
+.borrartrash{
+    display: none;
+}
+
+/*Media Querys*/
+@media (max-width: 1200px) {
+    .favorito__item__img img{
+        width: 20rem;
+        height: 15rem;
+    }
+}
+@media (max-width: 720px) {	
+    .favorito__item__img img{
+        width: 40rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 450px) {
+	.favorito__item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .favorito__item__boton__carrito{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .favorito__item__boton__carrito p{
+        display: none;
+    }
+
+    .borrarx{
+        display: none;
+    }
+
+    .favorito__item__boton__borrar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .borrartrash{
+        display: block;
+    }
 }
