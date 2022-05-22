@@ -98,3 +98,106 @@
 .foot{
     margin-top: 0;
 }
+
+
+/*medias querys*/
+@media  (max-width: 840px){
+
+    .fondo{
+        display: none;
+    }
+
+
+    h1{
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .paymentcontenedor{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .tabpanelcontenedor{
+        margin: 0 auto;
+    }
+
+    .tabpanel{
+        justify-content: space-evenly;
+    }
+
+    .formulariopago{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .botonespayment{
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .cvvfecha input{
+        width: 100%;
+        gap: 1rem;
+    }
+    
+}
+
+@media (max-width: 640px) {
+
+    h1{
+        text-align: center;
+    }
+    .tabpanelcontenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formulariopago{
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .formulariopago{
+        width: 100%;
+    }
+
+    .paymentcontenedor{
+        background-size: 50% 100%;
+    }
+
+    .tabpanel{
+        justify-content: space-evenly;
+      
+    }
+
+    
+
+    .cvvfecha{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .fecha{
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .botonespayment{
+        gap: 1rem;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+ 
+}

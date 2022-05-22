@@ -87,3 +87,79 @@ textarea{
     margin-top: 0;
 }
 
+/*Media Querys*/
+@media (max-width: 1200px) {
+
+}
+
+@media  (max-width: 840px){
+    .formulariogather input{
+        width: 100%;
+    }
+
+    .botonesgather{
+        gap: 1rem;
+    }
+
+    .botonesgather button{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    
+}
+
+@media (max-width: 640px) {
+
+    .fondo{
+        display: none;
+    }
+
+    .gathercontenedor{
+        width: 95%;
+        background-size: 50% 100%;
+        
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .gathercontenedor{
+        display: flex;
+        
+    }
+
+    .formulariogather{
+        margin: 0 auto;
+    }
+
+   
+}
+
+@media (max-width: 450px) {
+    .fondo{
+        display: none;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .gathercontenedor__formulario{
+        margin: 0 auto;
+        width: 70%;
+        
+    }
+
+    .formulariogather{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}

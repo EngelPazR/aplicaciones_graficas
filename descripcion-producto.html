@@ -23,44 +23,68 @@
 </head>
 
 <body>
-  <!--Navegacion-->
-  <header>
-    <nav class="contenedor">
-      <ul class="icon" id="contact">
-        <div class="navflex">
-          <li> <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a> </i></li>
-          <li><i class="fa-brands fa-whatsapp fa-2x"></i></li>
-          <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
-          <li><label for="">+505 87899008</label></li>
-        </div>
-        <li><a href="index.html">
-            <img src="./img/Logo.png" alt="logo">
-          </a></li>
-        <div class="navflex">
-          <li><a href="./login.html"><i class="fa-solid fa-circle-user fa-2x"></i></a></li>
-          <li>
-            <a href="favoritos.html">
-              <i class="fa-solid fa-heart fa-2x"></i>
+<!--Navegacion-->
+<header>
+  <nav class="contenedor">
+    <ul class="icon" id="contact">
+      <div class="navflex">
+        <li> <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a> </i></li>
+        <li><i class="fa-brands fa-whatsapp fa-2x"></i></li>
+        <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
+        <li><label class="telefono" for="">+505 87899008</label></li>
+      </div>
+
+      <li><a href="index.html">
+          <img src="./img/Logo.png" alt="logo">
+        </a></li>
+
+      <div class="navflex">
+        <li><a href="./login.html"><i class="fa-solid fa-circle-user fa-2x"></i></a></li>
+        <li>
+          <a href="favoritos.html">
+            <i class="fa-solid fa-heart fa-2x"></i>
+          </a>
+        </li>
+        <li><a href="carrito.html"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a></li>
+        <div>
+          <li class="inputlogo">
+            <input type="text" class="inputborder">
+            <a href="product.-list.html">
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
             </a>
           </li>
-          <li><a href="carrito.html"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a></li>
-          <div>
-            <li class="inputlogo">
-              <input type="text" class="inputborder">
-              <a href="product.-list.html">
-                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-              </a>
-            </li>
-          </div>
         </div>
-    </nav>
-  </header>
+      </div>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Home</a></li>
+          <li><a class="menu__item" href="login.html">Login</a></li>
+          <li><a class="menu__item" href="favoritos.html">favoritos</a></li>
+          <li><a class="menu__item" href="carrito.html">Carrito</a></li>
+          <li class="inputlogo">
+            <input type="text" class="inputborder" placeholder="Buscar">
+            <a href="product.-list.html">
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </ul>
+  </nav>
+</header>
 
   <div class="fondotrapecio">
     <!--cambia a trapecio Rosa-->
     <section class="imagenproducto">
       <img
-        src="https://images.unsplash.com/photo-1531399395381-6603d3b9899f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=419&q=80"
+        src="img/photo-1531399395381-6603d3b9899f.webp"
         alt="">
     </section>
 

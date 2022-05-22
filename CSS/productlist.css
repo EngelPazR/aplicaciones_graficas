@@ -2,6 +2,7 @@
     display: flex;
     margin-bottom: 5rem;
     gap: 2rem;
+    
 }
 
 .listadoproductos img{
@@ -18,8 +19,39 @@
 
 .listadotexto p{
     font-weight: bold;
+    text-align: justify;
 }
 
 .price{
     font-size: 3rem;
+}
+
+/*medias querys*/
+
+@media (max-width: 800px) {
+    
+}
+
+@media (max-width: 680px) {
+    
+}
+
+@media (max-width: 450px) {
+    .listadoproductos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        border: 0.1rem solid #c3bbbb;
+    }
+
+    .price{
+        display: none;
+    }
+
+    .listadotexto p{
+        padding: 0.5rem;
+    }
 }

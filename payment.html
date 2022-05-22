@@ -21,38 +21,62 @@
 </head>
 
 <body>
-    <!--Navegacion-->
-    <header>
-        <nav class="contenedor">
-            <ul class="icon" id="contact">
-                <div class="navflex">
-                    <li> <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a> </i></li>
-                    <li><i class="fa-brands fa-whatsapp fa-2x"></i></li>
-                    <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
-                    <li><label for="">+505 87899008</label></li>
-                </div>
-                <li><a href="index.html">
-                        <img src="./img/Logo.png" alt="logo">
-                    </a></li>
-                <div class="navflex">
-                    <li><a href="./login.html"><i class="fa-solid fa-circle-user fa-2x"></i></a></li>
-                    <li>
-                        <a href="favoritos.html">
-                            <i class="fa-solid fa-heart fa-2x"></i>
-                        </a>
-                    </li>
-                    <li><a href="carrito.html"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a></li>
-                    <div>
-                        <li class="inputlogo">
-                            <input type="text" class="inputborder">
-                            <a href="product.-list.html">
-                                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-                            </a>
-                        </li>
-                    </div>
-                </div>
-        </nav>
-    </header>
+   <!--Navegacion-->
+  <header>
+    <nav class="contenedor">
+      <ul class="icon" id="contact">
+        <div class="navflex">
+          <li> <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a> </i></li>
+          <li><i class="fa-brands fa-whatsapp fa-2x"></i></li>
+          <li><i class="fa-brands fa-instagram-square fa-2x"></i></li>
+          <li><label class="telefono" for="">+505 87899008</label></li>
+        </div>
+
+        <li><a href="index.html">
+            <img src="./img/Logo.png" alt="logo">
+          </a></li>
+
+        <div class="navflex">
+          <li><a href="./login.html"><i class="fa-solid fa-circle-user fa-2x"></i></a></li>
+          <li>
+            <a href="favoritos.html">
+              <i class="fa-solid fa-heart fa-2x"></i>
+            </a>
+          </li>
+          <li><a href="carrito.html"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a></li>
+          <div>
+            <li class="inputlogo">
+              <input type="text" class="inputborder">
+              <a href="product.-list.html">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              </a>
+            </li>
+          </div>
+        </div>
+
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Home</a></li>
+            <li><a class="menu__item" href="login.html">Login</a></li>
+            <li><a class="menu__item" href="favoritos.html">favoritos</a></li>
+            <li><a class="menu__item" href="carrito.html">Carrito</a></li>
+            <li class="inputlogo">
+              <input type="text" class="inputborder" placeholder="Buscar">
+              <a href="product.-list.html">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </ul>
+    </nav>
+  </header>
 
     <div class="paymentcontenedor">
         <div class="fondo">
@@ -78,10 +102,12 @@
 
                         <div class="cvvfecha">
                             <label for="cvvmc">CVV</label>
-                            <label for="fechamc">FECHA</label>
+                            <label for="fechamc" class="fecha">FECHA</label>
+
+                           
+                            <input type="text" id="cvvmc">
 
                             <input type="text" id="fechamc">
-                            <input type="text" id="cvvmc">
                         </div>
 
                         <div class="botonespayment">
@@ -126,10 +152,11 @@
 
                         <div class="cvvfecha">
                             <label for="cvvvisa">CVV</label>
-                            <label for="fechavisa">FECHA</label>
+                            <label for="fechavisa" class="fecha">FECHA</label>
 
-                            <input type="text" id="fechavisa">
+                           
                             <input type="text" id="cvvvisa">
+                            <input type="text" id="fechavisa">
                         </div>
 
                         <div class="botonespayment">
