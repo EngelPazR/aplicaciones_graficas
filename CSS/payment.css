@@ -100,6 +100,122 @@
 }
 
 
+/*Modal compra*/
+
+
+
+.modal-container {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.3);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+}
+
+.show {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal {
+	background-color: #fff;
+	width: 30rem;
+	max-width: 100%;
+	height: 35rem;
+	padding: 3rem 5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+	
+}
+
+.modal{
+    text-align: center;
+}
+
+.modal h1{
+    color: #7C8691;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.modal img{
+    width: 10rem;
+    margin: 0 auto;
+}
+
+.modal button{
+    background-color: #13C39C;
+    color: white;
+    border-style: none;
+    width: 20rem;
+    padding: 1rem;
+}
+.modal button:hover{
+    cursor: pointer;
+}
+
+
+.modalfail{
+    background-color: #fff;
+	width: 50rem;
+	height: 37rem;
+    max-width: 80%;
+	padding: 3rem 5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modalfail h1{
+    color: #7C8691;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.modalfail img{
+    width: 10rem;
+    margin: 0 auto;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cancel{
+    background-color: #C4C4C4;
+    color: white;
+    border-style: none;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+.buttons.cancel:hover{
+    cursor: pointer;
+}
+
+.try{
+    background-color: #FB4B4B;
+    color: white;
+    border-style: none;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+.buttons.try:hover{
+    cursor: pointer;
+}
+
 /*medias querys*/
 @media  (max-width: 840px){
 
@@ -163,6 +279,19 @@
 }
 
 @media (max-width: 450px) {
+
+    .modalfail h1 {
+        font-size: 1.8rem;
+    }
+
+    .modalfail h3{
+        font-size: 1.5rem;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .formulariopago{
         width: 100%;
