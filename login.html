@@ -91,7 +91,7 @@
 
         <input type="submit" value="Ingresar">
 
-        <a class="derecha" href="./restaurar-password1.html">Olvidé mi contraseña</a>
+        <button class="derecha" type="button" id="open">Olvidé mi contraseña</button>
         <label class="barras" for="">O inicia sesión con</label>
 
         <div class="inicios">
@@ -105,6 +105,56 @@
         </label>
       </form>
     </section>
+  </div>
+
+  <!--modales-->
+  <div id="modal_container" class="modal-container">
+    <div class="modal">
+      <div>
+        <section>        
+          <h1>¿OLVIDO SU CONTRASEÑA?</h1>
+          <h3>Ingrese su correo electronico</h3>
+        </section>
+      </div>
+      <div class="inputs">
+        <input type="email" placeholder="correo electronico">
+        <button id="opencodigo">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_container_codigo" class="modal-container">
+    <div class="modal">
+      <div>
+        <section>        
+          <h1>¿OLVIDO SU CONTRASEÑA?</h1>
+          <h3>Ingrese codigo de verificacion</h3>
+        </section>
+      </div>
+      <div class="inputs">
+        <input type="number" placeholder="codigo de verificacion">
+        <button id="openchange">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_container_change" class="modal-container">
+    <div class="modal grande">
+      <div>
+        <section>        
+          <h1>Confirmar</h1>
+          <h3>Ingrese codigo de verificacion</h3>
+        </section>
+      </div>
+      <div class="inputs">
+        <label for="">Nueva Password</label>
+        <input type="password" placeholder="nueva password">
+
+        <label for="">Confirmar Password</label>
+        <input type="password" placeholder="confirmar password">
+        <button id="close">Aceptar</button>
+      </div>
+    </div>
   </div>
 
   <!--footer-->
@@ -136,6 +186,8 @@
     </ul>
 
   </footer>
+
+  <script src="js/modalrecuperarpass.js"></script>
 </body>
 
 
