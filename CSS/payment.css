@@ -4,6 +4,7 @@
     background-size: 30% 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    margin: 5rem 0;
 }
 
 .fondo{
@@ -194,11 +195,11 @@
     background-color: #C4C4C4;
     color: white;
     border-style: none;
-    padding: 0.5rem;
+    padding: 1rem;
     width: 10rem;
 }
 
-.buttons.cancel:hover{
+.cancel:hover{
     cursor: pointer;
 }
 
@@ -206,11 +207,12 @@
     background-color: #FB4B4B;
     color: white;
     border-style: none;
-    padding: 0.5rem;
+    padding: 1rem;
     width: 10rem;
+    
 }
 
-.buttons.try:hover{
+.try:hover{
     cursor: pointer;
 }
 
