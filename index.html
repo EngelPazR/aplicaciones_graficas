@@ -110,9 +110,13 @@
 
   <div class="encabezado">
     <h2>Ofertas de verano</h2>
+    <div id="reloj">
+    </div>
+
   </div>
 
   <div class="contenedor contenedor-productos owl-carousel owl-theme">
+    
 
     <a href="descripcion-producto.html" class="item">
       <section class="producto">
@@ -156,6 +160,57 @@
 
     <section class="producto item">
       <img class="image-product" src="https://wallpaperaccess.com/full/1976242.jpg" id="vestido-rojo" alt="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde mollitia excepturi iure!</p>
+
+      <p class="price">$10.00</p>
+
+      <span class="descripcion">1258 bids, 359 watchers <br>
+        $5.95 for shipping</span>
+      <br>
+
+      <div class="calificacion">
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <span class="category">4.6</span>
+        <button><i class="fa-solid fa-heart"></i> mirar</button>
+      </div>
+    </section>
+
+    <section class="producto item">
+      <img class="image-product" src="https://wallpapercave.com/wp/wp2896922.jpg" id="vestido-rojo" alt="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde mollitia excepturi iure!</p>
+
+      <p class="price">$10.00</p>
+
+      <span class="descripcion">1258 bids, 359 watchers <br>
+        $5.95 for shipping</span>
+      <br>
+
+      <div class="calificacion">
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <span class="category">4.6</span>
+        <button><i class="fa-solid fa-heart"></i> mirar</button>
+      </div>
+    </section>
+
+    <section class="producto item ">
+      <img class="image-product" src="https://wallpapercave.com/wp/wp2896922.jpg" id="vestido-rojo" alt="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde mollitia excepturi iure!</p>
+
+      <p class="price">$10.00</p>
+
+      <span class="descripcion">1258 bids, 359 watchers <br>
+        $5.95 for shipping</span>
+      <br>
+
+      <div class="calificacion">
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <span class="category">4.6</span>
+        <button><i class="fa-solid fa-heart"></i> mirar</button>
+      </div>
+    </section>
+
+    <section class="producto item">
+      <img class="image-product" src="https://wallpapercave.com/wp/wp2896922.jpg" id="vestido-rojo" alt="">
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde mollitia excepturi iure!</p>
 
       <p class="price">$10.00</p>
@@ -268,6 +323,58 @@
         <button><i class="fa-solid fa-heart"></i> mirar</button>
       </div>
     </section>
+
+    <section class="producto item">
+      <img class="image-product" src="https://wallpapercave.com/wp/wp2896922.jpg" id="vestido-rojo" alt="">
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde mollitia excepturi iure!</p>
+
+      <p class="price">$10.00</p>
+
+      <span class="descripcion">1258 bids, 359 watchers <br>
+        $5.95 for shipping</span>
+      <br>
+
+      <div class="calificacion">
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <span class="category">4.6</span>
+        <button><i class="fa-solid fa-heart"></i> mirar</button>
+      </div>
+    </section>
+
+    <section class="producto item">
+      <img class="image-product" src="https://wallpaperaccess.com/full/1976242.jpg" id="vestido-rojo" alt="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde mollitia excepturi iure!</p>
+
+      <p class="price">$10.00</p>
+
+      <span class="descripcion">1258 bids, 359 watchers <br>
+        $5.95 for shipping</span>
+      <br>
+
+      <div class="calificacion">
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <span class="category">4.6</span>
+        <button><i class="fa-solid fa-heart"></i> mirar</button>
+      </div>
+    </section>
+
+    <section class="producto item">
+      <img class="image-product" src="https://wallpapercave.com/wp/wp2896922.jpg" id="vestido-rojo" alt="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde mollitia excepturi iure!</p>
+
+      <p class="price">$10.00</p>
+
+      <span class="descripcion">1258 bids, 359 watchers <br>
+        $5.95 for shipping</span>
+      <br>
+
+      <div class="calificacion">
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <span class="category">4.6</span>
+        <button><i class="fa-solid fa-heart"></i> mirar</button>
+      </div>
+    </section>
   </div>
 
 
@@ -283,8 +390,8 @@
 
     <ul class="enlacesfoot">
       <div class="enlacesfoot__pages">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Costumer Service</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="#">Community</a></li>
         <li><a href="#">FQA</a></li>
         <li><a href="contacto.html">Contact</a></li>
@@ -313,25 +420,53 @@
 
   <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
-      autoplay:true,
-      autoplayTimeout:2000,
-      autoplayHoverPause:false,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      responsiveClass:true,
       loop: true,
       margin: 10,
       nav: true,
+      navText: [
+        "<i class='fa fa-angle-left fa-4x'></i>",
+        "<i class='fa fa-angle-right fa-4x'></i>"
+      ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
+          nav: false
         },
         600: {
-          items: 2
+          items: 2,
+          nav: true
         },
         1000: {
-          items: 4
+          items: 3,
+          nav: true
         }
       }
     })
   </script>
+
+  <script type="text/javascript">
+
+    function cuentaregresiva() {
+      var fecha = new Date('2022-06-30');
+      var hoy = new Date();
+      var resta = fecha.getTime() - hoy.getTime();
+      var dias = Math.floor(resta / (1000 * 60 * 60 * 24));
+      var horas = Math.floor((resta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutos = Math.floor((resta % (1000 * 60 * 60)) / (1000 * 60));
+      var segundos = Math.floor((resta % (1000 * 60)) / 1000);
+      document.getElementById('reloj').innerHTML = "Termina en " + dias + ": dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+    }
+
+    window.onload = function () {
+      setInterval(cuentaregresiva, 1000);
+    }
+
+  </script>
+
 </body>
 
 </html>

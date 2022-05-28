@@ -1,0 +1,117 @@
+.video {
+    width: 50%;
+    height: 50rem;
+}
+
+.video video {
+    width: 100%;
+    height: 40rem;
+}
+
+
+#botones {
+    width: 40rem;
+    float: left;
+    width: 13.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+}
+
+#barra {
+    float: left;
+    width: 72rem;
+    height: 10px;
+    padding: 2px;
+    margin: 2px 5px;
+    border: 1px solid #ccc;
+    background: #eee;
+}
+
+#progreso {
+    background: rgba(0, 0, 150, 0.2);
+    width: 0rem;
+    height: 0.16rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.contenedor-nosotros-texto{
+    height: 80rem;
+}
+
+/*Modal compra*/
+
+.modal-container {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.3);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+}
+
+.show {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal {
+	background-color: #fff;
+	width: 40rem;
+	max-width: 100%;
+	height: 50rem;
+	padding: 3rem 5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+	
+}
+
+.modal{
+    text-align: center;
+}
+
+/*boton flotante*/
+.flotante{
+    position: fixed;
+    bottom: 6rem;
+    right: 4rem;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+}
+
+.flotante button{
+    width: 100%;
+    height: 100%;
+    background-color: #ef70c1;
+    border: 0.1rem solid #ef70c1;
+    border-radius: 3rem;
+}
+
+.flotante button:hover{
+    cursor: pointer;
+}
+
+.llamadauser img{
+    width: 30rem;
+    height: 18rem;
+}
+
+.video{
+    width: 50%;
+    height: 20rem;
+}
+
+
+.video video{
+    width: 30rem;
+    height: 16rem;
+}

@@ -87,6 +87,32 @@ textarea{
     margin-top: 0;
 }
 
+.mapa{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mapa button{
+    width: 20rem;
+	height: 4rem;
+    border-style: none;
+    background-color:  #FF95B9;
+    font-weight: bold;
+    border-radius: 0.8rem;
+}
+
+.mapa div{ 
+    width: 100%;
+}
+
+.mapa button:hover{
+    cursor: pointer;
+}
+
+
 /*Media Querys*/
 @media (max-width: 1200px) {
 
@@ -161,5 +187,9 @@ textarea{
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+    }
+
+    .mapa button{
+        width: 100%;
     }
 }

@@ -1,16 +1,21 @@
-
 /*productos*/
 
-.contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 4fr));
-  gap: 3rem;
+.contenedor-productos{
+  margin-top: 2rem;
 }
+
 
 .producto {
   text-align: left;
   padding: 1rem;
+  border: 0.1rem solid orange;
+  border-radius: 0.5rem;
+  margin: 0 4rem;
 }
+
+
+
+
 
 .producto:hover {
   transform: scale(0.95);
@@ -51,4 +56,25 @@
 
 .category {
   color: #5e6366;
+}
+
+
+/*carousel productos*/
+
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  right: 0;
+  opacity: 1;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  left: 0;
+  opacity: 1;
+  font-size: 3rem;
+  z-index: 1;
 }

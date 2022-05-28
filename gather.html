@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="css/headerfooter.css">
   <link rel="stylesheet" href="/css/gather.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+
   <title>Gather</title>
 </head>
 
@@ -95,6 +99,11 @@
         <input type="tel" placeholder="Teléfono">
         <input type="number" placeholder="Código postal">
         <textarea class="textareadireecion" name="" id="" placeholder="Direccion"></textarea>
+       
+        <div class="mapa">
+          <button type="button" onclick="geolocalizacion()">Obtener mi ubicacion</button>
+          <div id="map"></div>
+        </div>
 
         <div class="botonesgather">
           <button type="submit" name="" id="">
@@ -142,6 +151,14 @@
     </ul>
 
   </footer>
+
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+  <script src="js/geolocalizacion.js"></script>
+
 </body>
 
 </html>

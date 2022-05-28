@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="css/headerfooter.css">
   <link rel="stylesheet" href="/css/payment.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.css"
+    integrity="sha384-+OB2CadpqXIt7AheMhNaVI99xKH8j8b+bHC8P5m2tkpFopGBklD3IRvYjPekeWIJ" crossorigin="anonymous">
+
 
 </head>
 
@@ -114,11 +117,9 @@
             <div class="cvvfecha">
               <label for="cvvmc">CVV</label>
               <label for="fechamc" class="fecha">FECHA</label>
-
-
               <input type="text" id="cvvmc">
 
-              <input type="text" id="fechamc">
+              <input type="date" data-picker id="fechamc">
             </div>
 
             <div class="botonespayment">
@@ -146,7 +147,7 @@
                 Realizar Compra
               </button>
 
-              <button type="reset" >
+              <button type="reset">
                 Cancelar
               </button>
             </div>
@@ -261,6 +262,10 @@
   <script src="js/tabpanel.js"></script>
   <script src="js/modalcompra.js"></script>
   <script src="js/carousel.js"></script>
+
+  <script src="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.js"
+    integrity="sha384-JqNLUzAxpw7zEu6rKS/TNPZ5ayCWPUY601zaig7cUEVfL+pBoLcDiIEkWHjl07Ot"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
