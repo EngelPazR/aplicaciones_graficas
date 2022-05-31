@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #c4c4c4;
+}
+nav {
+  height: 20%;
+  width: 75%;
+  right: 0%;
+  left: 25%;
+  position: absolute;
+  background-color: #c4c4c4;
+}
+
+nav img {
+  position: absolute;
+  left: 30%;
+  right: 0%;
+  top: 0%;
+  bottom: 11%;
+  width: 6rem;
+}
+
+nav .search {
+  position: absolute;
+  left: 85%;
+  right: 0%;
+  top: 30%;
+  bottom: 50%;
+  width: 48px;
+  height: 48px;
+  background: url("../img/Search.png") no-repeat center center/contain;
+}
+
+nav .search_bar {
+  box-sizing: border-box;
+  position: absolute;
+  left: 65%;
+  right: 15%;
+  top: 45%;
+  bottom: 39%;
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  border: 3px solid #000000;
+  top: 50px;
+}
+
+nav .user_icon {
+  position: absolute;
+  left: 57%;
+  right: 0%;
+  top: 30%;
+  bottom: 0%;
+  width: 48px;
+  height: 48px;
+  background: url("../img/icon_user.png") no-repeat center center/contain;
+}
+
+.user_panel {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 25%;
+  height: 130%;
+  left: 0px;
+  top: 0px;
+
+  border: 5px solid #ff2184;
+  background-color: #fff;
+}
+
+.user_panel .logo {
+  position: absolute;
+  left: 6.42%;
+  right: 71.26%;
+  top: 1.19%;
+  bottom: 91.96%;
+  background: url("../img/Logo.png") no-repeat center center/contain;
+}
+
+.user_panel img {
+  position: absolute;
+  left: 32.72%;
+  right: 37.52%;
+  top: 15.49%;
+  bottom: 74.22%;
+
+  background: url("../img/Profile\ picture.png") no-repeat center/contain;
+}
+
+.user_panel h1 {
+  position: absolute;
+  left: 24%;
+  right: 22%;
+  top: 31%;
+  bottom: 65%;
+  width: 80%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #000000;
+}
+
+.user_panel .name {
+  position: absolute;
+  width: 70%;
+  height: 5%;
+  left: 30%;
+  top: 2%;
+}
+
+.user_panel .name h1 {
+  position: absolute;
+  left: 30%;
+  right: 25.38%;
+  top: -15%;
+  bottom: 91.4%;
+
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #ffc600;
+}
+
+.user_panel .name h2 {
+  position: absolute;
+  left: 50%;
+  right: 25.38%;
+  top: -20%;
+  bottom: 91.4%;
+
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #000000;
+}
+
+.user_panel .division {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 12.07%;
+  bottom: 87.8%;
+
+  background: #d9d9d9;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.user_panel .dashboard {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  left: 0px;
+  top: 40%;
+  background-color: #fff;
+}
+
+.user_panel .dashboard .servicio_al_cliente {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 0;
+  top: 60%;
+
+  background: #ff95b9;
+}
+
+.dashboard .servicio_al_cliente:hover {
+  background: none;
+  color: #ff95b9;
+}
+
+.dashboard .servicio_al_cliente h1:hover {
+  color: #ff95b9;
+}
+
+.dashboard .gestion_ventas:hover {
+  background: #fff;
+}
+
+.dashboard .gestion_ventas h1:hover {
+  color: #ff95b9;
+}
+
+.dashboard .gestion_inventario:hover {
+  background: #fff;
+}
+
+.dashboard .gestion_inventario h1:hover {
+  color: #ff95b9;
+}
+
+.servicio_al_cliente .logo {
+  position: absolute;
+  left: 4.76%;
+  right: 87.43%;
+  top: 30%;
+  bottom: 7.16%;
+  height: 32px;
+  width: 32px;
+  background: url("../img/servicio_cliente.png") no-repeat center/contain;
+}
+
+.servicio_al_cliente h1 {
+  position: absolute;
+  left: 14.68%;
+  right: 0%;
+  top: 20%;
+  bottom: 36.61%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+
+  color: #fff;
+}
+
+.dashboard .gestion_ventas {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 0;
+  top: 40%;
+
+  background: #ff95b9;
+}
+
+.dashboard .gestion_ventas .logo {
+  position: absolute;
+  left: 3.87%;
+  right: 86.96%;
+  top: 12.14%;
+  bottom: 42.11%;
+  background: url("../img/icon-park-outline_clothes-cardigan.png") no-repeat
+    center/contain;
+}
+
+.dashboard .gestion_ventas h1 {
+  position: absolute;
+  left: 14%;
+  right: 0%;
+  top: 0%;
+  bottom: 40%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+
+  color: #fff;
+}
+
+.dashboard .gestion_inventario {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 0;
+  top: 20%;
+
+  background-color: #ff95b9;
+}
+
+.dashboard .gestion_inventario .logo {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 7px;
+  top: 26px;
+  background: url("../img/tabler_businessplan.png") no-repeat center;
+}
+
+.dashboard .gestion_inventario h1 {
+  position: absolute;
+  left: 14.68%;
+  right: 0%;
+  top: 11.78%;
+  bottom: 73.4%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+
+  color: #fff;
+}
+
+.servicio_cliente_sub_class {
+  height: 15%;
+  width: 75%;
+  left: 25%;
+  top: 18%;
+  position: absolute;
+  background-color: #fff;
+}
+
+.servicio_cliente_sub_class .s1 {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #ffd0d3;
+}
+
+.servicio_cliente_sub_class .s1 h1 {
+  position: absolute;
+  left: 10%;
+  width: 70%;
+  height: 30%;
+  top: 20%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+
+  color: #000;
+  background-color: #ffd0d3;
+
+
+}
+.servicio_al_cliente_sub_class .s2 a h1{
+  text-decoration: none;
+}
+.servicio_cliente_sub_class .s2 {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  left: 30%;
+  top: 20%;
+
+  background-color: #fff;
+
+  
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 25px;
+
+  text-decoration: none;
+  
+
+}
+
+
+.servicio_al_cliente_sub_class .s2 h1{
+  position: absolute;
+  left: 10%;
+  width: 70%;
+  height: 30%;
+  top: 20%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.panel {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  left: 25%;
+  top: 30%;
+
+  background: #ffd0d3;
+}
+
+.data{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 98%;
+    height: 84%;
+    left: 1%;
+    top: 5%;
+
+    background-color: #000;
+    
+}
+
+.data .column_icon{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 5%;
+height: 100%;
+background-color: #FFF;
+
+flex: none;
+order: 0;
+align-self: flex-start;
+flex-grow: 0;
+}
+
+.column_icon .table_item01{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 100%;
+height: 6.25%;
+background-color: #c4c4c4;
+
+
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.table_item01 .column_item{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 8px 0px;
+width: 48px;
+height: 48px;
+background: #111121;
+box-shadow: inset 0px -1px 0px #E6E7E9;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.column_item .content{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+width: 130px;
+height: 32px;
+
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.content .left{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+display: none;
+width: 32px;
+height: 32px;
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.content .down{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 13px 0px;
+gap: 10px;
+
+width: 32px;
+height: 32px;
+
+
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.content .text{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 8px 16px;
+
+width: 130px;
+height: 32px;
+
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.text h1{
+    
+display: none;
+width: 98px;
+height: 16px;
+
+
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 115%;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.01em;
+text-align: center;
+
+color: #FFFFFF;
+
+
+ 
+flex: none;
+order: 0;
+align-self: center;
+flex-grow: 0;
+}
+
+.content .rigth{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+display: none;
+width: 32px;
+height: 32px;
+
+
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+background-color: aqua;
+}
+
+.rigth .box_icon{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 13px 0px;
+gap: 10px;
+
+width: 32px;
+height: 32px;
+
+
+
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.box_icon img{
+  
+width: 10px;
+height: 6px;
+
+
+background: url("../img/icon_chev_down.png") no-repeat center center/contain;
+
+flex: none;
+order: 0;
+flex-grow: 0
+}
+
+
+.panel .content-table{
+  border-collapse: collapse;
+  margin: 25px 7%;
+  font-size: 0.9em;
+  font-family: 'Roboto';
+  min-width: 800px;
+  width: 85%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead{
+  color: #FFF;
+  background-color: #111214;
+  text-align: left;
+  font-family:'Segoe UI';
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+.content-table td{
+  color: #111214;
+  background-color: #FFF;
+  padding: 10px 5px;
+}
+
+.content-table  tbody tr{
+  border-bottom: 1px solid #fafafa;
+}
+
+
+.content-table  tbody tr:nth-of-type(even){
+  background-color:#F3F3F3;
+
+}
+.content-table tbody tr:nth-last-of-type(even){
+  color: #fafafa;
+}
+.content-table  tbody tr.activerow{
+  font-weight: bold;
+  color: #ff95b9;
+}
+
+
