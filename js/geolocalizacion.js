@@ -25,7 +25,7 @@ function mapa(longitude, latitude, accuracy) {
     var map = L.map('map').setView([latitude, longitude], 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright%22%3EOpenStreetMap</a> contributors'
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright%22%3EOpenStreetMap</a>contributors'
     }).addTo(map);
 
     L.marker([latitude, longitude]).addTo(map)
@@ -33,5 +33,3 @@ function mapa(longitude, latitude, accuracy) {
         .openPopup();
 
 }
-
-window.onload = geolocalizacion();
