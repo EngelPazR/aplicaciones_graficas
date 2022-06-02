@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/general.css">
   <link rel="stylesheet" href="./css/headerfooter.css">
   <link rel="stylesheet" href="./css/style-login.css">
+  <link rel="stylesheet" href="css/modalllamada.css">
   <title>Inicio de sesion</title>
 </head>
 
@@ -111,7 +112,7 @@
   <div id="modal_container" class="modal-container">
     <div class="modal">
       <div>
-        <section>        
+        <section>
           <h1>¿OLVIDO SU CONTRASEÑA?</h1>
           <h3>Ingrese su correo electronico</h3>
         </section>
@@ -126,7 +127,7 @@
   <div id="modal_container_codigo" class="modal-container">
     <div class="modal">
       <div>
-        <section>        
+        <section>
           <h1>¿OLVIDO SU CONTRASEÑA?</h1>
           <h3>Ingrese codigo de verificacion</h3>
         </section>
@@ -141,7 +142,7 @@
   <div id="modal_container_change" class="modal-container">
     <div class="modal grande">
       <div>
-        <section>        
+        <section>
           <h1>Confirmar</h1>
           <h3>Ingrese codigo de verificacion</h3>
         </section>
@@ -153,6 +154,36 @@
         <label for="">Confirmar Password</label>
         <input type="password" placeholder="confirmar password">
         <button id="close">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flotante">
+    <button id="openllamada">
+      <i class="fa fa-video-camera"></i>
+    </button>
+  </div>
+
+  <div id="modal_container_llamada" class="modal-container">
+    <div class="modalbutton">
+      <div class="llamadauser">
+        <img src="img/userllamada.png" alt="">
+      </div>
+
+      <div class="video">
+        <video id="llamada"></video>
+      </div>
+
+      <div class="botonesllamada">
+        <button onclick="videollamada()" class="btnllamada">
+          <i class="fa fa-phone"></i>
+        </button>
+        <button onclick="terminarllamada()" class="btnfin">
+          <i class="fa fa-phone-slash"></i>
+        </button>
+        <button id="closellamada" class="btnfin">
+          <i class="fa fa-times"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -169,23 +200,25 @@
 
     <ul class="enlacesfoot">
       <div class="enlacesfoot__pages">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Costumer Service</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="#">Community</a></li>
         <li><a href="#">FQA</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contacto.html">Contact</a></li>
       </div>
       <div class="enlacesfoot__use">
-        <li><a href="#">Terminos de Uso</a></li>
+        <li><a href="terminos.html">Terminos de Uso</a></li>
         <li></li>
-        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="politicas.html">Política de Privacidad</a></li>
       </div>
       <div class="copyright">
-        <li>Copyright @ Pandelimon 2022</li>
+        <li>Copyright @Pandelimon 2022</li>
       </div>
     </ul>
 
   </footer>
+
+  <script src="js/llamada.js"></script>
 
   <script src="js/modalrecuperarpass.js"></script>
 </body>

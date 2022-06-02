@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/modalllamada.css">
     <title>Elite Store | Nosotros</title>
 </head>
 
@@ -81,12 +82,33 @@
     <div>
         <div class="contenedor">
             <div class="contenedor-nosotros">
-                <div class="contenedor-nosotros-texto">
+                <div class="">
                     <h1>Nosotros</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.
+                        <!--Sobre nosotros-->
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis unde doloribus illo
+                        doloremque neque sit consectetur. Nemo doloremque iste soluta necessitatibus est dolorem, quis
+                        perferendis, aperiam illum mollitia expedita reiciendis?
                     </p>
+                </div>
+
+                <div class="contenedor-nosotros-texto">
+                    <h2>Mision</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis id sit iure explicabo?
+                        Distinctio, voluptatem voluptas? Ipsa fuga, voluptatum aspernatur provident tempore laudantium
+                        at ullam hic natus exercitationem autem aperiam.
+                    </p>
+
+                    <h2>Vision</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis id sit iure explicabo?
+                        Distinctio, voluptatem voluptas? Ipsa fuga, voluptatum aspernatur provident tempore laudantium
+                        at ullam hic natus exercitationem autem aperiam.
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -94,19 +116,19 @@
 
 
     <div class="flotante">
-        <button id="open">
+        <button id="openllamada">
             <i class="fa fa-video-camera"></i>
         </button>
     </div>
 
-    <div id="modal_container" class="modal-container">
+    <div id="modal_container_llamada" class="modal-container">
         <div class="modalbutton">
             <div class="llamadauser">
-                <img src="img/04.jpg" alt="">
+                <img src="img/userllamada.png" alt="">
             </div>
 
             <div class="video">
-                <video id="llamada" ></video>
+                <video id="llamada"></video>
             </div>
 
             <div class="botonesllamada">
@@ -116,7 +138,7 @@
                 <button onclick="terminarllamada()" class="btnfin">
                     <i class="fa fa-phone-slash"></i>
                 </button>
-                <button id="close" class="btnfin">
+                <button id="closellamada" class="btnfin">
                     <i class="fa fa-times"></i>
                 </button>
             </div>
@@ -153,43 +175,7 @@
 
     </footer>
 
-    <script>
-        function videollamada() {
-            var llamada = document.getElementById('llamada');
-            /*webcam*/
-            navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
-            navigator.getUserMedia({ video: true, audio: true }, function (stream) {
-                llamada.srcObject = stream;
-                llamada.play();
-            }, function (error) {
-                console.log(error);
-            });
-        }
-
-        function terminarllamada(){
-            var llamada = document.getElementById('llamada');
-            llamada.srcObject.getTracks().forEach(function(track){
-                track.stop();
-            });
-        }
-    </script>
-
-    <script>
-        const open = document.getElementById('open');
-        const modal_container = document.getElementById('modal_container');
-        const close = document.getElementById('close');
-
-        open.addEventListener('click', () => {
-            modal_container.classList.add('show');
-
-        });
-
-        close.addEventListener('click', () => {
-            modal_container.classList.remove('show');
-
-        });
-
-    </script>
+    <script src="js/llamada.js"></script>
 
 </body>
 

@@ -1,0 +1,130 @@
+.modal-container {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.3);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+}
+
+.show {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modalbutton {
+	background-color: #fff;
+	width: 40rem;
+	max-width: 100%;
+	height: 50rem;
+	padding: 3rem 5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+	
+}
+
+.modalbutton{
+    text-align: center;
+}
+
+/*boton flotante*/
+.flotante{
+    position: fixed;
+    bottom: 6rem;
+    right: 4rem;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+}
+
+.flotante i{
+    color: black;
+}
+
+.flotante button{
+    width: 100%;
+    height: 100%;
+    background-color: #ef70c1;
+    border: 0.1rem solid #ef70c1;
+    border-radius: 3rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.flotante button:hover{
+    cursor: pointer;
+}
+
+.llamadauser{
+    margin-bottom: 0.5rem;
+}
+
+.llamadauser img{
+    width: 24rem;
+    height: 18rem;
+    margin: 0 auto;
+}
+
+.video{
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+
+.video video{
+    width: 24rem;
+    height: 18rem;
+    margin: 0 auto;
+}
+
+.botonesllamada{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnllamada{
+    background-color: green;
+    border-style: none;
+    border-radius: 5rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.btnllamada:hover{
+    cursor: pointer;
+}
+
+.btnfin{
+    background-color: red;
+    border-style: none;
+    border-radius: 5rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.btnfin:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 420px){
+    .modalbutton{
+        width: 30rem;
+    }
+
+    .video{
+        margin: 0 auto;
+    }
+
+    .video video{
+        width: 20rem;
+        height: 18rem;
+        margin: 0 auto;
+    }
+}

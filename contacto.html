@@ -2,29 +2,30 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
 
-    <link rel="icon" href="../img/Logo.png">
+  <link rel="icon" href="../img/Logo.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="/img/Logo.png">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/headerfooter.css">
-    <link rel="stylesheet" href="css/favoritos.css">
-    <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="/img/Logo.png">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/headerfooter.css">
+  <link rel="stylesheet" href="css/favoritos.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/modalllamada.css">
 
 </head>
 
 <body>
-   <!--Navegacion-->
-   <header>
+  <!--Navegacion-->
+  <header>
     <nav class="contenedor">
       <ul class="icon" id="contact">
         <div class="navflex">
@@ -80,72 +81,105 @@
     </nav>
   </header>
 
-    <main class="contenedor">
-        <!--Formulario de contacto-->
-        <div class="contacto">
-            <h2>Formulario de contacto</h2>
-            <p class="sangria">Enviar un correo electrónico. Todos los campos con un asterisco ('*') son obligatorios.
-            </p>
-            <form action="" class="formulario">
-                <div class="contacto__form">
-                    <label for="nombre">Nombre*</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
-                </div>
-
-                <div class="contacto__form">
-                    <label for="email">Email*</label>
-
-                    <input type="email" name="email" id="email" placeholder="Email" required />
-                </div>
-
-                <div class="contacto__form">
-                    <label for="asunto">Asunto*</label>
-                    <input type="text" name="asunto" id="asunto" placeholder="Asunto" required />
-                </div>
-
-                <div class="contacto__form">
-                    <label for="mensaje">Mensaje*</label>
-                    <textarea name="mensaje" id="mensaje" cols="85" rows="10" placeholder="Mensaje" required></textarea>
-                </div>
-
-                <div class="contacto__form">
-                    <button class="btnenviar" type="submit">
-                        Enviar
-                    </button>
-                </div>
-            </form>
+  <main class="contenedor">
+    <!--Formulario de contacto-->
+    <div class="contacto">
+      <h2>Formulario de contacto</h2>
+      <p class="sangria">Enviar un correo electrónico. Todos los campos con un asterisco ('*') son obligatorios.
+      </p>
+      <form action="" class="formulario">
+        <div class="contacto__form">
+          <label for="nombre">Nombre*</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
         </div>
-    </main>
 
-    <!--footer-->
-    <footer class="foot">
-        <address class="direccion">
-            <img src="./img/Logo.png" alt="">
-            <span><i class="fa-solid fa-location-dot"></i>Phuongmadethis</span>
-            <span><br><br> Barrio Maximo Ordoñez
-                <br> Contiguo al cine antiguo
-                <br> United States</span>
-        </address>
+        <div class="contacto__form">
+          <label for="email">Email*</label>
 
-        <ul class="enlacesfoot">
-            <div class="enlacesfoot__pages">
-                <li><a href="/">Home</a></li>
-                <li><a href="#">Costumer Service</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">FQA</a></li>
-                <li><a href="#">Contact</a></li>
-            </div>
-            <div class="enlacesfoot__use">
-                <li><a href="#">Terminos de Uso</a></li>
-                <li></li>
-                <li><a href="#">Política de Privacidad</a></li>
-            </div>
-            <div class="copyright">
-                <li>Copyright @ Pandelimon 2022</li>
-            </div>
-        </ul>
+          <input type="email" name="email" id="email" placeholder="Email" required />
+        </div>
 
-    </footer>
+        <div class="contacto__form">
+          <label for="asunto">Asunto*</label>
+          <input type="text" name="asunto" id="asunto" placeholder="Asunto" required />
+        </div>
+
+        <div class="contacto__form">
+          <label for="mensaje">Mensaje*</label>
+          <textarea name="mensaje" id="mensaje" cols="85" rows="10" placeholder="Mensaje" required></textarea>
+        </div>
+
+        <div class="contacto__form">
+          <button class="btnenviar" type="submit">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+
+  <div class="flotante">
+    <button id="openllamada">
+      <i class="fa fa-video-camera"></i>
+    </button>
+  </div>
+
+  <div id="modal_container_llamada" class="modal-container">
+    <div class="modalbutton">
+      <div class="llamadauser">
+        <img src="img/userllamada.png" alt="">
+      </div>
+
+      <div class="video">
+        <video id="llamada"></video>
+      </div>
+
+      <div class="botonesllamada">
+        <button onclick="videollamada()" class="btnllamada">
+          <i class="fa fa-phone"></i>
+        </button>
+        <button onclick="terminarllamada()" class="btnfin">
+          <i class="fa fa-phone-slash"></i>
+        </button>
+        <button id="closellamada" class="btnfin">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--footer-->
+  <footer class="foot">
+    <address class="direccion">
+      <img src="./img/Logo.png" alt="">
+      <span><i class="fa-solid fa-location-dot"></i>Phuongmadethis</span>
+      <span><br><br> Barrio Maximo Ordoñez
+        <br> Contiguo al cine antiguo
+        <br> United States</span>
+    </address>
+
+    <ul class="enlacesfoot">
+      <div class="enlacesfoot__pages">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">FQA</a></li>
+        <li><a href="contacto.html">Contact</a></li>
+      </div>
+      <div class="enlacesfoot__use">
+        <li><a href="terminos.html">Terminos de Uso</a></li>
+        <li></li>
+        <li><a href="politicas.html">Política de Privacidad</a></li>
+      </div>
+      <div class="copyright">
+        <li>Copyright @Pandelimon 2022</li>
+      </div>
+    </ul>
+
+  </footer>
+
+  <script src="js/llamada.js"></script>
 </body>
 
 </html>
