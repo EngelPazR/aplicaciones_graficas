@@ -29,7 +29,7 @@ function mapa(longitude, latitude, accuracy) {
     }).addTo(map);
 
     L.marker([latitude, longitude]).addTo(map)
-        .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        .bindPopup('Tu ubicacion')
         .openPopup();
 
 }
