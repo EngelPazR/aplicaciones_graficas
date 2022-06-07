@@ -111,9 +111,6 @@
 
   <div class="encabezado">
     <h2>Ofertas de verano</h2>
-    <div id="reloj">
-    </div>
-
   </div>
 
   <div class="contenedor contenedor-productos owl-carousel owl-theme">
@@ -384,6 +381,7 @@
     </button>
   </div>
 
+  <!--- Modal -->
   <div id="modal_container_llamada" class="modal-container">
     <div class="modalbutton">
       <div class="llamadauser">
@@ -407,6 +405,25 @@
       </div>
     </div>
   </div>
+
+  <div id="modal_container" class="modal-container">
+    <div class="modal">
+
+      <div class="modalencabezado">
+        <h1>Oferta Especial</h1>
+      </div>
+
+      <p>Descuento del <span>30%</span> en nuestros productos</p>
+      <div id="reloj">
+      </div>
+
+      <div>
+        <button id="close">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+
 
   <!--footer-->
   <footer class="foot">
@@ -440,12 +457,28 @@
 
   <script src="js/llamada.js"></script>
 
+  <script>
+    /*Modal*/
+    const modal_container = document.getElementById('modal_container');
+    const close = document.getElementById('close');
+
+    window.addEventListener('load', () => {
+      modal_container.classList.add('show');
+    });
+
+    close.addEventListener('click', () => {
+      modal_container.classList.remove('show');
+      
+    });
+  </script>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="./js/carousel.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -490,7 +523,9 @@
       var horas = Math.floor((resta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutos = Math.floor((resta % (1000 * 60 * 60)) / (1000 * 60));
       var segundos = Math.floor((resta % (1000 * 60)) / 1000);
-      document.getElementById('reloj').innerHTML = "Termina en " + dias + ": dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+
+
+      document.getElementById('reloj').innerHTML = dias + "D " + horas + "H " + minutos + "M " + segundos + "S";
     }
 
     window.onload = function () {

@@ -1,6 +1,6 @@
 /*productos*/
 
-.contenedor-productos{
+.contenedor-productos {
   margin-top: 2rem;
 }
 
@@ -56,6 +56,78 @@
 }
 
 
+/*Modal compra*/
+
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+  border-radius: 1rem;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  width: 40rem;
+  max-width: 80%;
+  height: 35rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+.modal {
+  text-align: center;
+}
+
+.modal p{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 0.5rem;
+ 
+}
+
+.modal button{
+  border-radius: 0.5rem;
+  background-color: #FF95B9;
+  border-style: none;
+  font-weight: bold;
+  width: 12rem;
+  padding: 0.5rem 0;
+}
+
+.modal button:hover{
+  cursor: pointer;
+}
+
+.modalencabezado{
+  height: 10rem;
+  background-color: #FF95B9;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.modal span{
+  font-size: 3.5rem;
+}
+
+
 /*carousel productos*/
 
 .owl-nav .owl-next {
@@ -76,8 +148,14 @@
   z-index: 1;
 }
 
-#reloj{
+#reloj {
+  margin:  0 auto;
   font-size: 2rem;
   font-weight: bold;
-  color: #2979ff;
+  background-color: #FF95B9;
+  border-radius: 1rem;
+  width: 18rem;
+  color: black;
+  margin: 0 auto;
+  max-width: 100%;
 }
