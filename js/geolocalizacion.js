@@ -12,7 +12,7 @@ function geo_success(position) {
     var accuracy = position.coords.accuracy;
 
     var mymap = document.getElementById("map");
-    mymap.style.height = "30rem";
+    mymap.style.height = "50rem";
     mapa(lon, lat, accuracy);
 }
 
