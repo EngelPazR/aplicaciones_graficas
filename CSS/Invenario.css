@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,59 +14,407 @@ body {
   height: 100%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
 }
-
-
 
 .menu {
   position: absolute;
   width: 90px;
-  height: 70%;
+  height: 60%;
   left: 70px;
-  top: 150px;
-  background-color: #FFF;
+  top: 200px;
+  background-color: #fff;
   box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
     8px 8px 40px rgba(125, 153, 180, 0.2);
   border-radius: 50px;
+
+  display: flex;
+  padding: 40px 0;
 }
-
-.menu .messages{
-    
-    position: absolute;
-    background: url('https://api.iconify.design/ant-design/message-outlined.svg?color=%23ff95b9&width=120') no-repeat center center / contain;
-    z-index: 2;
-    left: 15px;
-    top: 10%;
-    width: 56px;
-    height: 56px;
-    border-radius: 56px;
-    box-shadow: rgba(125, 153, 180, 0.2);
-
-
-}
-
-.menu .messages:hover{
-
-}
-
-
-.inventory{
-
+.field {
   position: absolute;
-
-
-}
-
-
-.circle{
-  position: absolute;
-  background-color: #ff95b9;
-  z-index: 2;
+  width: 64px;
+  height: 64px;
   left: 10px;
-  top: 10%;
+  top: 10px;
+  border-radius: 64px;
+  background: none;
+  align-items: center;
+}
+.menu .field .messages {
+  position: absolute;
+  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23ff95b9&width=120")
+    no-repeat center center / contain;
+  z-index: 2;
+  left: 2px;
+  top: 0;
   width: 56px;
   height: 56px;
   border-radius: 56px;
   box-shadow: rgba(125, 153, 180, 0.2);
+  align-items: center;
+}
+.menu .field:hover {
+  background-color: #ff95b9;
+}
+.menu .messages:hover {
+  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=white&width=120")
+    no-repeat center center / contain;
+}
+/**/
+.field2 {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  background-color: none;
+  width: 64px;
+  height: 67px;
+  align-items: center;
+  border-radius: 64px;
+}
+.menu .field2 .sales {
+  position: absolute;
+  z-index: 2;
+  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=%23ff95b9&width=120")
+    no-repeat center center / contain;
+  left: 2px;
+  top: 3px;
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  box-shadow: rgba(125, 153, 180, 0.2);
+  align-items: center;
+}
+.menu .field2:hover {
+  background-color: #ff95b9;
+}
+.menu .sales:hover {
+  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=white&width=120")
+    no-repeat center center / contain;
+}
 
+/***/
+
+.field3 {
+  position: absolute;
+  top: 80%;
+  left: 10px;
+  background-color: none;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  border-radius: 64px;
+}
+.menu .field3 .inventory {
+  position: absolute;
+  z-index: 2;
+  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=%23ff95b9&width=120")
+    no-repeat center center / contain;
+  left: 2px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  box-shadow: rgba(125, 153, 180, 0.2);
+  align-items: center;
+}
+.menu .field3:hover {
+  background-color: #ff95b9;
+}
+.menu .inventory:hover {
+  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=white&width=120")
+    no-repeat center center / contain;
+}
+
+/*Fin estilos para todos los dashboards*/
+
+.Panel {
+  background-color: #fff;
+  position: absolute;
+  left: 7%;
+  right: 4%;
+  top: 7%;
+  bottom: 10%;
+  z-index: -1;
+  box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
+    8px 8px 40px rgba(125, 153, 180, 0.2);
+  border-radius: 18px;
+  height: 92.5%;
+}
+
+.Panel .nav {
+  position: absolute;
+  background-color: #fafafa;
+  width: 100%;
+  height: 10%;
+  box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
+    8px 8px 40px rgba(125, 153, 180, 0.2);
+  border-radius: 18px;
+}
+
+.nav .search {
+  position: absolute;
+  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48")
+    no-repeat center center / contain;
+  width: 5%;
+  height: 40%;
+  top: 30%;
+  left: 95%;
+  z-index: 2;
+}
+
+.nav input {
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  left: 75%;
+  border-radius: 16px;
+  top: 25%;
+  border-color: #ff95b9;
+}
+
+.nav input::placeholder {
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #ff95b9;
+  text-align: center;
+}
+.nav img {
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  left: 45%;
+}
+.nav h1 {
+  position: absolute;
+  width: 20%;
+  left: 2%;
+  top: 7%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+
+  color: #000000;
+}
+
+.Panel .tags {
+  position: absolute;
+  width: 80%;
+  height: 6%;
+  left: 10%;
+  top: 20%;
+
+  display: flex;
+  flex: auto;
+}
+.tags .codigo {
+  height: 100%;
+  width: 20%;
+  left: 0;
+}
+
+.codigo h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  color: #ff95b9;
+  left: 0;
+}
+
+.codigo input {
+  position: relative;
+  width: 50%;
+  background: rgba(135, 135, 135, 0.2);
+  left: 40%;
+  top: -36px;
+  border-radius: 16px;
+  border-radius: none;
+  border-color: #ff95b9;
+}
+
+/**/
+
+.tags .nombre {
+  position: relative;
+  height: 10%;
+  width: 40%;
+  left: 0%;
+}
+
+.nombre h1 {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  color: #ff95b9;
+  left: 20%;
+}
+
+.nombre input {
+  position: relative;
+  width: 40%;
+  background: rgba(135, 135, 135, 0.2);
+  left: 40%;
+  top: -36px;
+  border-radius: 16px;
+  border-radius: none;
+  border-color: #ff95b9;
+}
+
+/**/
+
+.tags .Descripcion {
+  height: 100%;
+  width: 20%;
+  left: 0;
+}
+
+.Descripcion h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  color: #ff95b9;
+  left: 0;
+}
+
+.Descripcion input {
+  position: relative;
+  width: 100%;
+  background: rgba(135, 135, 135, 0.2);
+  left: 50%;
+  top: -36px;
+  border-radius: 16px;
+  border-radius: none;
+  border-color: #ff95b9;
+}
+
+/*********************/
+
+.Panel .tags2 {
+  position: absolute;
+  width: 60%;
+  height: 6%;
+  left: 10%;
+  top: 30%;
+
+  display: flex;
+  flex: auto;
+}
+
+.tags2 .Tasa {
+  height: 100%;
+  width: 40%;
+  left: 0;
+  background-color: none;
+}
+
+.tags2 .Tasa h1 {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  color: #ff95b9;
+  left: 0;
+}
+
+.tags2 .Tasa input{
+
+  position: relative;
+  width: 60%;
+ 
+  background: rgba(135, 135, 135, 0.2);
+  left: 35%;
+  top: -36px;
+  border-radius: 16px;
+  border-radius: none;
+  border-color: #ff95b9;
+}
+
+.tags2 .etiquetas {
+  height: 100%;
+  width: 60%;
+  left: 0;
+  background-color: none;
+}
+
+.tags2 .etiquetas h1 {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  color: #ff95b9;
+  left: 10%;
+}
+
+.tags2 .etiquetas input{
+
+  position: relative;
+  width: 40%;
+ 
+  background: rgba(135, 135, 135, 0.2);
+  left: 30%;
+  top: -36px;
+  border-radius: 16px;
+  border-radius: none;
+  border-color: #ff95b9;
+}
+
+
+.Panel .content-table{
+  position: absolute;
+  border-collapse: collapse;
+  margin: 25px 7%;
+  font-size: 0.9em;
+  font-family: 'Roboto';
+  min-width: 800px;
+  top: 30%;
+  width: 80%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead{
+  color: #FFF;
+  background-color: #111214;
+  text-align: left;
+  font-family:'Segoe UI';
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+.content-table td{
+  color: #111214;
+  background-color: #FFF;
+  padding: 10px 5px;
+}
+
+.content-table  tbody tr{
+  border-bottom: 1px solid #fafafa;
+}
+
+
+.content-table  tbody tr:nth-of-type(even){
+  background-color:#F3F3F3;
+
+}
+.content-table tbody tr:nth-last-of-type(even){
+  color: #fafafa;
+}
+.content-table  tbody tr.activerow{
+  font-weight: bold;
+  color: #ff95b9;
 }
