@@ -126,8 +126,6 @@ body {
     no-repeat center center / contain;
 }
 
-/*Fin estilos para todos los dashboards*/
-
 .Panel {
   background-color: #fff;
   position: absolute;
@@ -200,228 +198,22 @@ body {
   color: #000000;
 }
 
-.Panel .tags {
-  position: absolute;
-  width: 80%;
-  height: 6%;
-  left: 10%;
-  top: 20%;
+.Data{
+position: absolute;
+width: 90%;
+height: 80%;
+left: 5%;
+top: 15%;
 
-  display: flex;
-  flex: auto;
-}
-.tags .codigo {
-  height: 100%;
-  width: 20%;
-  left: 0;
+background: #D9D9D9;
+border-radius: 5px;
 }
 
-.codigo h1 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 50px;
-  color: #ff95b9;
-  left: 0;
-}
+/*****************************/
 
-.codigo input {
-  position: relative;
-  width: 50%;
-  background: rgba(135, 135, 135, 0.2);
-  left: 40%;
-  top: -36px;
-  border-radius: 16px;
-  border-radius: none;
-  border-color: #ff95b9;
-}
 
-/**/
 
-.tags .nombre {
-  position: relative;
-  height: 10%;
-  width: 40%;
-  left: 0%;
-}
-
-.nombre h1 {
-  position: relative;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 50px;
-  color: #ff95b9;
-  left: 20%;
-}
-
-.nombre input {
-  position: relative;
-  width: 40%;
-  background: rgba(135, 135, 135, 0.2);
-  left: 40%;
-  top: -36px;
-  border-radius: 16px;
-  border-radius: none;
-  border-color: #ff95b9;
-}
-
-/**/
-
-.tags .Descripcion {
-  height: 100%;
-  width: 20%;
-  left: 0;
-}
-
-.Descripcion h1 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 50px;
-  color: #ff95b9;
-  left: 0;
-}
-
-.Descripcion input {
-  position: relative;
-  width: 100%;
-  background: rgba(135, 135, 135, 0.2);
-  left: 55%;
-  top: -36px;
-  border-radius: 16px;
-  border-radius: none;
-  border-color: #ff95b9;
-}
-
-/*********************/
-
-.Panel .tags2 {
-  position: absolute;
-  width: 60%;
-  height: 6%;
-  left: 10%;
-  top: 30%;
-
-  display: flex;
-  flex: auto;
-}
-
-.tags2 .Tasa {
-  height: 100%;
-  width: 40%;
-  left: 0;
-  background-color: none;
-}
-
-.tags2 .Tasa h1 {
-  position: relative;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 50px;
-  color: #ff95b9;
-  left: 0;
-}
-
-.tags2 .Tasa input {
-  position: relative;
-  width: 60%;
-
-  background: rgba(135, 135, 135, 0.2);
-  left: 43%;
-  top: -36px;
-  border-radius: 16px;
-  border-radius: none;
-  border-color: #ff95b9;
-}
-
-.tags2 .etiquetas {
-  height: 100%;
-  width: 60%;
-  left: 0;
-  background-color: none;
-}
-
-.tags2 .etiquetas h1 {
-  position: relative;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 50px;
-  color: #ff95b9;
-  left: 10%;
-}
-
-.tags2 .etiquetas input {
-  position: relative;
-  width: 40%;
-
-  background: rgba(135, 135, 135, 0.2);
-  left: 30%;
-  top: -36px;
-  border-radius: 16px;
-  border-radius: none;
-  border-color: #ff95b9;
-}
-
-.Panel .sub_search {
-  position: absolute;
-  width: 20%;
-  height: 6%;
-  left: 10%;
-  top: 40%;
-}
-
-.sub_search .icon {
-  position: absolute;
-  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48")
-    no-repeat center center / contain;
-  width: 10%;
-  height: 100%;
-  top: 0%;
-  left: 0%;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  z-index: 2;
-}
-
-.sub_search input {
-  position: relative;
-
-  background: rgba(135, 135, 135, 0.2);
-  left: 20%;
-  top: 25%;
-  border-radius: 16px;
-  border-radius: none;
-  border-color: #ff95b9;
-}
-
-.sub_search input::placeholder {
-  font-family: "Roboto";
-  font-size: 12px;
-  color: #ff95b9;
-  text-align: center;
-}
-
-.Panel .data {
-  position: absolute;
-  width: 85%;
-  height: 53%;
-  left: 10%;
-  top: 47%;
-  margin: 0;
-  margin-right: 90%;
-  border-radius: 16px;
-  background-color: #FFF;
-  border-color: #ff95b9;
-}
-
-.data .content_table {
+.Data .content_table {
   border-collapse: collapse;
   text-align: left;
   font-size: 0.9em;
@@ -432,11 +224,14 @@ body {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+
+
 .content_table  tbody tr{
   border-bottom: 1px solid #fFF;
+  font-family: 'Roboto';
 }
 .content_table thead {
-  color: #878787;
+  color: #fff;
   background-color: none;
   text-align: left;
   font-family: "Segoe UI";
@@ -445,14 +240,20 @@ body {
 }
 
 .content_table th {
-  color: #878787;
+  color: #ff95b9;
+  background-color: #FFF;
 }
 
 .content_table td {
   background-color: #fff;
-  padding: 11.5px 5px;
+  padding: 13px 5px;
   text-align: left;
-  border-radius: 5px 5px 0 0;
+  color: #000;
+
+}
+
+tr .activerow{
+  border-radius: 5px;
 }
 
 .content_table tbody tr {
@@ -465,4 +266,8 @@ body {
 }
 .content_table tbody tr:nth-last-of-type(even) {
   color: #fafafa;
+}
+
+tbody .active_row:hover{
+  background-color: #ff95b9;
 }
