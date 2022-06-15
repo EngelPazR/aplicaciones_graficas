@@ -648,3 +648,58 @@ color: #000000;
 
     /***************/
 
+.datostrafico .porcentajes{
+    width: 120px;
+    height: 100px;
+    right: 0;
+    top: 15%;
+
+}
+
+.datostrafico h3{
+position: absolute;
+left: 10%;
+right: 0;
+top: 60%;
+bottom: 60.11%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+
+
+color: #000000;
+}
+
+.datostrafico h4{
+    position: absolute;
+    left: 10%;
+    right: 0;
+    top: 70%;
+    bottom: 60.11%;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+    
+    
+    color: #000000;
+    }
+
+
+    .Panel .grafico{
+        position: absolute;
+        background-image: url('../img/Grafica.jpg') no-repeat;
+        left: 15%;
+        right: 10%;
+        width: 80%;
+        height: 40%;
+        top: 52%;
+
+    }
