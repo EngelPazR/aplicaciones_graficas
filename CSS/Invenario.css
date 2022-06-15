@@ -139,7 +139,7 @@ body {
   box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
     8px 8px 40px rgba(125, 153, 180, 0.2);
   border-radius: 18px;
-  height: 92.5%;
+  height: 95%;
 }
 
 .Panel .nav {
@@ -290,7 +290,7 @@ body {
   position: relative;
   width: 100%;
   background: rgba(135, 135, 135, 0.2);
-  left: 50%;
+  left: 55%;
   top: -36px;
   border-radius: 16px;
   border-radius: none;
@@ -328,13 +328,12 @@ body {
   left: 0;
 }
 
-.tags2 .Tasa input{
-
+.tags2 .Tasa input {
   position: relative;
   width: 60%;
- 
+
   background: rgba(135, 135, 135, 0.2);
-  left: 35%;
+  left: 43%;
   top: -36px;
   border-radius: 16px;
   border-radius: none;
@@ -359,11 +358,10 @@ body {
   left: 10%;
 }
 
-.tags2 .etiquetas input{
-
+.tags2 .etiquetas input {
   position: relative;
   width: 40%;
- 
+
   background: rgba(135, 135, 135, 0.2);
   left: 30%;
   top: -36px;
@@ -372,49 +370,98 @@ body {
   border-color: #ff95b9;
 }
 
-
-.Panel .content-table{
+.Panel .sub_search {
   position: absolute;
+  width: 20%;
+  height: 6%;
+  left: 10%;
+  top: 40%;
+}
+
+.sub_search .icon {
+  position: absolute;
+  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48")
+    no-repeat center center / contain;
+  width: 10%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  z-index: 2;
+}
+
+.sub_search input {
+  position: relative;
+
+  background: rgba(135, 135, 135, 0.2);
+  left: 20%;
+  top: 25%;
+  border-radius: 16px;
+  border-radius: none;
+  border-color: #ff95b9;
+}
+
+.sub_search input::placeholder {
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #ff95b9;
+  text-align: center;
+}
+
+.Panel .data {
+  position: absolute;
+  width: 85%;
+  height: 53%;
+  left: 10%;
+  top: 47%;
+  margin: 0;
+  margin-right: 90%;
+  border-radius: 16px;
+  background-color: #fafafa;
+}
+
+.data .content_table {
   border-collapse: collapse;
-  margin: 25px 7%;
+  text-align: left;
   font-size: 0.9em;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   min-width: 800px;
-  top: 30%;
-  width: 80%;
+  width: 100%;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-
-.content-table thead{
-  color: #FFF;
-  background-color: #111214;
+.content_table  tbody tr{
+  border-bottom: 1px solid #fafafa;
+}
+.content_table thead {
+  color: #878787;
+  background-color: none;
   text-align: left;
-  font-family:'Segoe UI';
+  font-family: "Segoe UI";
   font-weight: bold;
   border-radius: 5px 5px 0 0;
 }
 
-.content-table td{
-  color: #111214;
-  background-color: #FFF;
+.content_table th {
+  color: #878787;
+}
+
+.content_table td {
+  background-color: #fff;
+  padding: 11.5px 5px;
+  text-align: left;
+  border-radius: 5px 5px 0 0;
+}
+
+.content_table tbody tr {
+  border-bottom: 1px solid #fafafa;
   padding: 10px 5px;
 }
 
-.content-table  tbody tr{
-  border-bottom: 1px solid #fafafa;
+.content_table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
 }
-
-
-.content-table  tbody tr:nth-of-type(even){
-  background-color:#F3F3F3;
-
-}
-.content-table tbody tr:nth-last-of-type(even){
+.content_table tbody tr:nth-last-of-type(even) {
   color: #fafafa;
-}
-.content-table  tbody tr.activerow{
-  font-weight: bold;
-  color: #ff95b9;
 }
