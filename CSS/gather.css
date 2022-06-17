@@ -55,7 +55,7 @@
 .textareadireecion {
     grid-column-start: 1;
     grid-column-end: 3;
-    height: 14rem;
+    height: 20rem !important;
 }
 
 textarea{

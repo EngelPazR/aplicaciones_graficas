@@ -84,6 +84,17 @@
     </nav>
   </header>
 
+  <div class="carrousel">
+    <div class="previous botonescarrousel">
+      <i class="fa-solid fa-chevron-left atras"></i>
+    </div>
+
+    <div class="next botonescarrousel">
+      <i class="fa-solid fa-chevron-right adelante"></i>
+    </div>
+    <img class="banner" src="./img/2.jpg" alt="" id="imagenCarrousel">
+  </div>
+
   <div class="gathercontenedor">
 
     <div class="fondo">
@@ -94,12 +105,16 @@
     <div class="gathercontenedor__formulario">
       <h1>INFORMACIÓN DE CONTACTO:</h1>
 
-      <div class="formulariogather">
+      <form class="formulariogather" id="myform">
         <input type="text" placeholder="Nombres">
         <input type="text" placeholder="Apellidos">
         <input type="tel" placeholder="Teléfono">
         <input type="number" placeholder="Código postal">
-        <textarea class="textareadireecion" name="" id="" placeholder="Direccion"></textarea>
+        <input type="text" class="textareadireecion" name="" id="" placeholder="Direccion"></input>
+
+        <div>
+          <p class="MensajeValidacion">No debe dejar campos vacios</p>
+        </div>
 
         <div class="mapa">
           <button type="button" onclick="geolocalizacion()">Obtener mi ubicacion</button>
@@ -107,7 +122,7 @@
         </div>
 
         <div class="botonesgather">
-          <button type="submit" name="" id="">
+          <button type="submit" name="" id="" onclick="validarCamposVacios(event)">
             <a href="payment.html">
               Realizar Compra
             </a>
@@ -118,7 +133,7 @@
             </a>
           </button>
         </div>
-      </div>
+      </form>
     </div>
 
   </div>
@@ -211,6 +226,23 @@
     crossorigin=""></script>
 
   <script src="js/geolocalizacion.js"></script>
+  <script src="js/carousel.js"></script>
+
+  <script>
+    function validarCamposVacios(event) {
+      var elements = document.getElementById("myform").elements;
+      var flag = true;
+
+      for (var i = 0, element; element = elements[i++];) {
+        if ((element.type === "text" && element.value === "") || (element.type === "tel" && element.value === "") || (element.type === "number" && element.value === "") || (element.type === "textarea" && element.value === "") || (element.type === "email" && element.value === "")) {
+          flag=false;
+          event.preventDefault();
+          document.getElementsByClassName("MensajeValidacion")[0].style.display="block";
+          break;
+        }      
+      }
+    }
+  </script>
 
 </body>
 

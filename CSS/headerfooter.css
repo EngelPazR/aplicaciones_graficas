@@ -4,6 +4,14 @@ html a {
     color: black;
 }
 
+.MensajeValidacion{
+    color: red;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: justify;
+    display: none;
+}
+
 .carrousel {
     width: 100%;
     position: relative;
