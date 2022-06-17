@@ -108,7 +108,7 @@
 
       <div class="content">
         <div data-content id="mastercard" class="active">
-          <form action="" class="formulariopago">
+          <form action="" class="formulariopago" id="myform">
             <label for="tarjetamastercard">NUMERO DE TARJETA</label>
             <input type="text" name="" id="tarjetamastercard">
 
@@ -124,7 +124,7 @@
             </div>
 
             <div class="botonespayment">
-              <button type="button" id="open">
+              <button type="button" id="open" onclick="validarCamposVacios(event)">
                 Realizar Compra
               </button>
 
@@ -184,6 +184,10 @@
             </div>
           </form>
         </div>
+      </div>
+
+      <div>
+        <p class="MensajeValidacion">No debe dejar campos vacios</p>
       </div>
 
     </div>
@@ -319,7 +323,6 @@
   <script src="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.js"
     integrity="sha384-JqNLUzAxpw7zEu6rKS/TNPZ5ayCWPUY601zaig7cUEVfL+pBoLcDiIEkWHjl07Ot"
     crossorigin="anonymous"></script>
-
 
 </body>
 
