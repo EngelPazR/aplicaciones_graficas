@@ -1,41 +1,66 @@
-.modal-container {
-	display: flex;
-	background-color: rgba(0, 0, 0, 0.3);
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	pointer-events: none;
-	opacity: 0;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
-	transition: opacity 0.3s ease;
+.modal-container-llamada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 10%;
+    left: 30%;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
     z-index: 2;
 }
 
+.modal-container-llamada i{
+    color: #000000;
+}
+
 .show {
-	pointer-events: auto;
-	opacity: 1;
+    pointer-events: auto;
+    opacity: 1;
 }
 
-.modalbutton {
-	background-color: #fff;
-	width: 40rem;
-	max-width: 100%;
-	height: 50rem;
-	padding: 3rem 5rem;
-	border-radius: 0.5rem;
-	box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-	
+.modalbuttonllamada {
+    background-color: #fff;
+    width: 40rem;
+    max-width: 100%;
+    height: 50rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+
 }
 
-.modalbutton{
+.modalbuttonllamada {
     text-align: center;
 }
 
+/*modalbanner*/
+
+.modalbanner {
+    background-color: #ef70c1;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.modalbanner img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+.modalbanner button {
+    background-color: #ef70c1;
+    border-style: none;
+    color: #000000;
+}
+
 /*boton flotante*/
-.flotante{
+.flotante {
     position: fixed;
     bottom: 6rem;
     right: 4rem;
@@ -44,11 +69,11 @@
     height: 5rem;
 }
 
-.flotante i{
+.flotante i {
     color: black;
 }
 
-.flotante button{
+.flotante button {
     width: 100%;
     height: 100%;
     background-color: #ef70c1;
@@ -57,73 +82,138 @@
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 
-.flotante button:hover{
+.flotante button:hover {
     cursor: pointer;
 }
 
-.llamadauser{
-    margin-bottom: 0.5rem;
+.llamadauser {
+    margin: 2rem 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.llamadauser img{
-    width: 24rem;
-    height: 18rem;
-    margin: 0 auto;
+.llamadauser label {
+    height: 3rem;
+    width: 25rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #ef70c1;
+    border-style: none;
 }
 
-.video{
+.video {
     width: 100%;
-    height: 20rem;
-    margin: 0 auto;
+    height: 25rem;
 }
 
+#cerrarllamada {
+    display: none;
+    margin: 0 auto;
+    width: 60%;
+    background-color: #ef70c1;
+    border-style: none;
+}
 
-.video video{
-    width: 24rem;
+.video video {
+    width: 30rem;
     height: 18rem;
     margin: 0 auto;
 }
 
-.botonesllamada{
+.bordervideo button {
+    margin: 0 auto;
+}
+
+.botonesllamada {
     display: flex;
     justify-content: space-evenly;
 }
 
-.btnllamada{
-    background-color: green;
+.btnllamada {
     border-style: none;
     border-radius: 5rem;
     height: 3rem;
     width: 3rem;
 }
 
-.btnllamada:hover{
+.btnllamada:hover {
     cursor: pointer;
 }
 
-.btnfin{
-    background-color: red;
+.btnfin {
     border-style: none;
     border-radius: 5rem;
     height: 3rem;
     width: 3rem;
 }
 
-.btnfin:hover{
+.entrada {
+    border-style: 0.1rem solid #ef70c1;
+}
+
+.btnfin:hover {
+    cursor: pointer;
+}
+
+#closellamada:hover {
     cursor: pointer;
 }
 
 
-@media (max-width: 420px){
-    .modalbutton{
+@media (max-width: 1000px) {
+    .modal-container-llamada {
+        left: 17%;
+    }
+}
+
+@media (max-width: 700px) {
+    .modal-container-llamada {
+        left: 15%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .modal-container-llamada {
+        left: 10%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .modal-container-llamada {
+        left: 1%;
+    }
+
+}
+
+
+
+@media (max-width: 420px) {
+    .modalbuttonllamada {
         width: 30rem;
     }
 
-    .video{
+    .modal-container-llamada {
+        left: 0%;
+    }
+
+    .video video {
+        width: 24rem !important;
+    }
+
+    .video {
         margin: 0 auto;
     }
 
-    .video video{
+    #cerrarllamada{
+        width: 80%;
+    }
+
+    .video video {
         width: 20rem;
         height: 18rem;
         margin: 0 auto;

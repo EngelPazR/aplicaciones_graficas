@@ -1,10 +1,13 @@
 function videollamada() {
     var llamada = document.getElementById('llamada');
+    var buttoncerrar = document.getElementById('cerrarllamada');
     /*webcam*/
+    llamada.style.display = "block";
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
     navigator.getUserMedia({ video: true, audio: true }, function (stream) {
         llamada.srcObject = stream;
         llamada.play();
+        buttoncerrar.style.display = "block";
     }, function (error) {
         console.log(error);
     });
@@ -12,9 +15,12 @@ function videollamada() {
 
 function terminarllamada() {
     var llamada = document.getElementById('llamada');
+    var buttoncerrar = document.getElementById('cerrarllamada');
     llamada.srcObject.getTracks().forEach(function (track) {
         track.stop();
+        buttoncerrar.style.display = "none";
     });
+    llamada.style.display = "none";
 }
 
 const openllamada = document.getElementById('openllamada');
