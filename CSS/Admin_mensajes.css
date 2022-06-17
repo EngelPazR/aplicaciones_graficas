@@ -271,3 +271,62 @@ tr .activerow{
 tbody .active_row:hover{
   background-color: #ff95b9;
 }
+.nav .logo{
+  background: url('https://api.iconify.design/carbon/user-avatar-filled-alt.svg?color=%23ff95b9&width=48') no-repeat center center / contain;
+     width: 48px;
+     height: 48px;
+      left: 70%;
+      top: 15%;
+      position: absolute;
+      display: block;
+    }
+
+   /* .nav .login li{
+      position: absolute;
+      list-style-type: style none;
+    
+      font-family: 'Roboto';
+      font-size: 12px;
+      color:#000;
+     
+      top:-30px;
+      float: left;
+      padding: 0 25px;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+    }*/
+
+
+    .nav .logo .login ul{
+      position: absolute;
+      width: 400%;
+      height: 100%;
+      top: -100%;
+      right:-160%;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+      display: block;            /*Cambiar a none*/
+    }
+
+    .nav .logo .login ul li{
+      font-family: 'Roboto';
+      font-size: 12px;
+      color:#ff95b9;
+      list-style: none;
+      float: left; 
+      display: block;           /*Cambiar a none*/
+      padding-left: 10px;
+      padding-top: 10px;
+      
+    }
+
+  
+
+    .nav .logo:hover> .login ul li{     /*al pasar el mouse aparecera el menu*/
+      display: block;   
+      background-color: #ff95b9;
+      color: #FFF;              
+    }
