@@ -58,6 +58,11 @@
     height: 20rem !important;
 }
 
+.doscolumnas{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 textarea{
     resize: none;
     border: 0.2rem solid #000;

@@ -106,13 +106,13 @@
       <h1>INFORMACIÓN DE CONTACTO:</h1>
 
       <form class="formulariogather" id="myform">
-        <input type="text" placeholder="Nombres">
-        <input type="text" placeholder="Apellidos">
+        <input type="text" placeholder="Departamento">
+        <input type="text" placeholder="Municipio">
         <input type="tel" placeholder="Teléfono">
         <input type="number" placeholder="Código postal">
-        <input type="text" class="textareadireecion" name="" id="" placeholder="Direccion"></input>
+        <input type="text" class="textareadireecion" name="" id="" placeholder="Informacion adicional"></input>
 
-        <div>
+        <div class="doscolumnas">
           <p class="MensajeValidacion">No debe dejar campos vacios</p>
         </div>
 
@@ -124,7 +124,7 @@
         <div class="botonesgather">
           <button type="submit" name="" id="" onclick="validarCamposVacios(event)">
             <a href="payment.html">
-              Realizar Compra
+              Usar esta ubicacion
             </a>
           </button>
           <button type="reset" name="" id="">
@@ -239,7 +239,9 @@
           event.preventDefault();
           document.getElementsByClassName("MensajeValidacion")[0].style.display="block";
           break;
-        }      
+        }else{
+          document.getElementsByClassName("MensajeValidacion")[0].style.display="none";
+        }     
       }
     }
   </script>

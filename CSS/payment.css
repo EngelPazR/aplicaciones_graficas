@@ -191,6 +191,20 @@
     justify-content: center;
 }
 
+.pass{
+    background-color: #000000;
+    background-color: #FF95B9;
+    border-style: none;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+}
+
+.pass:hover{
+    cursor: pointer;
+}
+
 .cancel{
     background-color: #C4C4C4;
     color: white;
