@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   position: absolute;
   background-color: #ff95b9;
@@ -29,11 +27,10 @@ body {
   box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
     8px 8px 40px rgba(125, 153, 180, 0.2);
   border-radius: 50px;
-
+  z-index: 50;
   display: flex;
   padding: 40px 0;
 }
-
 .field {
   position: absolute;
   width: 64px;
@@ -44,10 +41,10 @@ body {
   background: none;
   align-items: center;
 }
-
 .menu .field .messages {
   position: absolute;
-  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23ff95b9&width=120") no-repeat center center / contain;
+  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23ff95b9&width=120")
+    no-repeat center center / contain;
   z-index: 2;
   left: 2px;
   top: 0;
@@ -57,15 +54,13 @@ body {
   box-shadow: rgba(125, 153, 180, 0.2);
   align-items: center;
 }
-
 .menu .field:hover {
   background-color: #ff95b9;
 }
-
 .menu .messages:hover {
-  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=white&width=120") no-repeat center center / contain;
+  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=white&width=120")
+    no-repeat center center / contain;
 }
-
 /**/
 .field2 {
   position: absolute;
@@ -77,11 +72,11 @@ body {
   align-items: center;
   border-radius: 64px;
 }
-
 .menu .field2 .sales {
   position: absolute;
   z-index: 2;
-  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=%23ff95b9&width=120") no-repeat center center / contain;
+  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=%23ff95b9&width=120")
+    no-repeat center center / contain;
   left: 2px;
   top: 3px;
   width: 56px;
@@ -90,13 +85,12 @@ body {
   box-shadow: rgba(125, 153, 180, 0.2);
   align-items: center;
 }
-
 .menu .field2:hover {
   background-color: #ff95b9;
 }
-
 .menu .sales:hover {
-  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=white&width=120") no-repeat center center / contain;
+  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=white&width=120")
+    no-repeat center center / contain;
 }
 
 /***/
@@ -111,11 +105,11 @@ body {
   align-items: center;
   border-radius: 64px;
 }
-
 .menu .field3 .inventory {
   position: absolute;
   z-index: 2;
-  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=%23ff95b9&width=120") no-repeat center center / contain;
+  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=%23ff95b9&width=120")
+    no-repeat center center / contain;
   left: 2px;
   top: 0;
   width: 56px;
@@ -124,13 +118,12 @@ body {
   box-shadow: rgba(125, 153, 180, 0.2);
   align-items: center;
 }
-
 .menu .field3:hover {
   background-color: #ff95b9;
 }
-
 .menu .inventory:hover {
-  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=white&width=120") no-repeat center center / contain;
+  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=white&width=120")
+    no-repeat center center / contain;
 }
 
 /*Fin estilos para todos los dashboards*/
@@ -142,7 +135,6 @@ body {
   right: 4%;
   top: 7%;
   bottom: 10%;
-  z-index: -1;
   box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
     8px 8px 40px rgba(125, 153, 180, 0.2);
   border-radius: 18px;
@@ -151,7 +143,7 @@ body {
 
 .Panel .nav {
   position: absolute;
-  background-color: #fafafa;
+  background-color: #fff;
   width: 100%;
   height: 10%;
   box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
@@ -161,7 +153,8 @@ body {
 
 .nav .search {
   position: absolute;
-  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48") no-repeat center center / contain;
+  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48")
+    no-repeat center center / contain;
   width: 5%;
   height: 40%;
   top: 30%;
@@ -177,6 +170,7 @@ body {
   border-radius: 16px;
   top: 25%;
   border-color: #ff95b9;
+  
 }
 
 .nav input::placeholder {
@@ -185,14 +179,12 @@ body {
   color: #ff95b9;
   text-align: center;
 }
-
 .nav img {
   position: absolute;
   width: 5%;
   height: 100%;
   left: 45%;
 }
-
 .nav h1 {
   position: absolute;
   width: 20%;
@@ -208,524 +200,520 @@ body {
   color: #000000;
 }
 
-.datosclientes {
-  position: absolute;
-  width: 25%;
-  height: 30%;
-  left: 10%;
-  top: 20%;
+.datosclientes{
+position: absolute;
+width: 25%;
+height: 30%;
+left: 10%;
+top: 20%;
 
-  background: #fff;
+background: #fff;
 
 
-  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-  border-radius: 14px;
+box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+border-radius: 14px;
 }
 
-.datosclientes h1 {
+.datosclientes h1{
+    
+position: absolute;
+font-family: 'Roboto';
+top: 5%;
+left: 10%;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
 
-  position: absolute;
-  font-family: 'Roboto';
-  top: 5%;
-  left: 10%;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-
-  color: #000000;
+color: #000000;
 }
 
-.datosclientes .icon {
-  position: absolute;
-  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23000&width=120") no-repeat center center/contain;
+.datosclientes .icon{
+    position: absolute;
+    background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23000&width=120") no-repeat center center/contain;
 
-  width: 20%;
-  height: 20%;
-  right: 0;
-
+    width: 20%;
+    height: 20%;
+    right: 0;
+ 
 }
 
-.datosclientes h2 {
-  position: absolute;
-  left: 12.86%;
-  right: 81.18%;
-  top: 23.48%;
-  bottom: 67.77%;
+.datosclientes h2{
+position: absolute;
+left: 12.86%;
+right: 81.18%;
+top: 23.48%;
+bottom: 67.77%;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
 
-  color: #000000;
-
-}
-
-.datosclientes .line {
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  left: 0px;
-  top: 103px;
-
-  border: 1px solid #DDDBE2;
-}
-
-.datosclientes .stat {
-  position: absolute;
-  width: 80%;
-  height: 5%;
-  left: 10%;
-  right: 60%;
-  top: 70%;
-  background-color: #C8C0DF;
-  border-radius: 16px;
+color: #000000;
 
 }
 
-.stat .actual {
-  position: absolute;
-  width: 75%;
-  height: 100%;
-  left: 0%;
+.datosclientes .line{
+position: absolute;
+width: 100%;
+height: 0px;
+left: 0px;
+top: 103px;
 
-  top: 0;
-  background-color: #ff95b9;
-  border-radius: 16px;
+border: 1px solid #DDDBE2;
+}
+
+.datosclientes .stat{
+position: absolute;
+width: 80%;
+height: 5%;
+left: 10%;
+right: 60%;
+top: 70%;
+background-color: #C8C0DF;
+border-radius: 16px;
 
 }
 
-.datosclientes img {
-  position: absolute;
-  left: 58%;
-  top: 40%;
-  background-image: url('../img/Union.png');
+.stat .actual{
+    position: absolute;
+width: 75%;
+height: 100%;
+left: 0%;
+
+top: 0;
+background-color: #ff95b9;
+border-radius: 16px;
+
 }
 
-.datosclientes h3 {
-  position: absolute;
-  left: 65.5%;
-  top: 52%;
-  font-family: 'Roboto';
-  font-size: 16px;
+.datosclientes img{
+position: absolute;
+left: 58%;
+top: 40%;
+background-image: url('../img/Union.png');
 }
 
-
-.datosclientes h4 {
-  position: absolute;
-  left: 10%;
-  right: 100%;
-  top: 80%;
-  width: 100%;
-
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-
-
-
-  color: #000000;
+.datosclientes h3{
+ position: absolute;
+left: 65.5%;
+top: 52%;
+font-family: 'Roboto';
+font-size: 16px;
 }
 
 
+.datosclientes h4{
+position: absolute;
+left: 10%;
+right: 100%;
+top: 80%;
+width: 100%;
 
 
-.datostrafico {
-  position: absolute;
-  width: 25%;
-  height: 30%;
-  left: 40%;
-  top: 20%;
-
-  background: #ff95b9;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
 
 
-  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-  border-radius: 14px;
+
+color: #000000;
 }
 
-.datosventas {
-  position: absolute;
-  width: 25%;
-  height: 30%;
-  left: 70%;
-  top: 20%;
-
-  background: none;
 
 
-  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-  border-radius: 14px;
+
+.datostrafico{
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    left: 40%;
+    top: 20%;
+    
+    background: #ff95b9;
+    
+    
+    box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+    border-radius: 14px;
+}
+.datosventas{
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    left: 70%;
+    top: 20%;
+    
+    background: none;
+    
+    
+    box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+    border-radius: 14px;
 }
 
 /**********/
 
 
-.datosventas h1 {
-
-  position: absolute;
-  font-family: 'Roboto';
-  top: 5%;
-  left: 10%;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-
-  color: #000000;
-}
-
-.datosventas .icon {
-  position: absolute;
-  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23000&width=120") no-repeat center center/contain;
-
-  width: 20%;
-  height: 20%;
-  right: 0;
-
-}
-
-.datosventas h2 {
-  position: absolute;
-  left: 12.86%;
-  right: 100%;
-  top: 23.48%;
-  bottom: 67.77%;
-  width: 100%;
-
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-
-  color: #000000;
-
-}
-
-.datosventas .line {
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  left: 0px;
-  top: 103px;
-
-  border: 1px solid #DDDBE2;
-}
-
-.datosventas .stat {
-  position: absolute;
-  width: 80%;
-  height: 5%;
-  left: 10%;
-  right: 60%;
-  top: 70%;
-  background-color: #C8C0DF;
-  border-radius: 16px;
-
-}
-
-.datosventas .stat .actual {
-  position: absolute;
-  width: 75%;
-  height: 100%;
-  left: 0%;
-
-  top: 0;
-  background-color: #ff95b9;
-  border-radius: 16px;
-
-}
-
-.datosventas img {
-  position: absolute;
-  left: 58%;
-  top: 40%;
-
-}
-
-.datosventas h3 {
-  position: absolute;
-  left: 66%;
-  top: 52%;
-  font-family: 'Roboto';
-  font-size: 16px;
-}
-
-
-.datosventas h4 {
-  position: absolute;
-  left: 10%;
-  right: 100%;
-  top: 80%;
-  width: 100%;
-
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-
-
-
-  color: #000000;
-}
-
-
-
-
-.datostrafico {
-  position: absolute;
-  width: 25%;
-  height: 30%;
-  left: 40%;
-  top: 20%;
-
-  background: #ff95b9;
-
-
-  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-  border-radius: 14px;
-}
-
-.datosventas {
-  position: absolute;
-  width: 25%;
-  height: 30%;
-  left: 70%;
-  top: 20%;
-
-  background: #ff95b9;
-
-
-  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-  border-radius: 14px;
-}
-
-
-
-/**************************************/
-
-
-.datostrafico h1 {
-
-  position: absolute;
-  font-family: 'Roboto';
-  top: 5%;
-  left: 10%;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-
-  color: #000000;
-}
-
-.datostrafico .icon {
-  position: absolute;
-  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23000&width=120") no-repeat center center/contain;
-
-  width: 20%;
-  height: 20%;
-  right: 0;
-
-}
-
-.datostrafico h2 {
-  position: absolute;
-  left: 12.86%;
-  right: 81.18%;
-  top: 23.48%;
-  bottom: 67.77%;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-
-  color: #000000;
-
-}
-
-.datostrafico .line {
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  left: 0px;
-  top: 103px;
-
-  border: 1px solid #DDDBE2;
-}
-
-.datostrafico .stat {
-  position: absolute;
-  width: 80%;
-  height: 5%;
-  left: 10%;
-  right: 60%;
-  top: 70%;
-  background-color: #C8C0DF;
-  border-radius: 16px;
-
-}
-
-.datostrafico .stat .actual {
-  position: absolute;
-  width: 75%;
-  height: 100%;
-  left: 0%;
-
-  top: 0;
-  background-color: #ff95b9;
-  border-radius: 16px;
-
-}
-
-.datostrafico img {
-  position: absolute;
-  left: 58%;
-  top: 40%;
-  background-image: url('../img/Union.png');
-}
-
-.datostrafico h3 {
-  position: absolute;
-  left: 66%;
-  top: 52%;
-  font-family: 'Roboto';
-  font-size: 16px;
-}
-
-
-.datostrafico h4 {
-  position: absolute;
-  left: 10%;
-  right: 100%;
-  top: 80%;
-  width: 100%;
-
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-
-
-
-  color: #000000;
-}
-
-
-
-
-.datostrafico {
-  position: absolute;
-  width: 25%;
-  height: 30%;
-  left: 40%;
-  top: 20%;
-
-  background: #ff95b9;
-
-
-  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-  border-radius: 14px;
-}
-
-.datosventas {
-  position: absolute;
-  width: 25%;
-  height: 30%;
-  left: 70%;
-  top: 20%;
-
-  background: #ff95b9;
-
-
-  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-  border-radius: 14px;
-}
-
-
-
-/***************/
-
-.datostrafico .porcentajes {
-  width: 120px;
-  height: 100px;
-  right: 0;
-  top: 15%;
-
-}
-
-.datostrafico h3 {
-  position: absolute;
-  left: 10%;
-  right: 0;
-  top: 60%;
-  bottom: 60.11%;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-
-
-
-  color: #000000;
-}
-
-.datostrafico h4 {
-  position: absolute;
-  left: 10%;
-  right: 0;
-  top: 70%;
-  bottom: 60.11%;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-
-
-
-  color: #000000;
-}
-
-
-.Panel .grafico {
-  position: absolute;
-  background-image: url('../img/Grafica.jpg') no-repeat;
-  left: 15%;
-  right: 10%;
-  width: 80%;
-  height: 40%;
-  top: 52%;
+.datosventas h1{
+    
+    position: absolute;
+    font-family: 'Roboto';
+    top: 5%;
+    left: 10%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    
+    color: #000000;
+    }
+    
+    .datosventas .icon{
+        position: absolute;
+        background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23000&width=120") no-repeat center center/contain;
+    
+        width: 20%;
+        height: 20%;
+        right: 0;
+     
+    }
+    
+    .datosventas h2{
+    position: absolute;
+    left: 12.86%;
+    right: 100%;
+    top: 23.48%;
+    bottom: 67.77%;
+    width: 100%;
+   
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    
+    color: #000000;
+    
+    }
+    
+    .datosventas .line{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 103px;
+    
+    border: 1px solid #DDDBE2;
+    }
+    
+    .datosventas .stat{
+    position: absolute;
+    width: 80%;
+    height: 5%;
+    left: 10%;
+    right: 60%;
+    top: 70%;
+    background-color: #C8C0DF;
+    border-radius: 16px;
+    
+    }
+    
+   .datosventas .stat .actual{
+        position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 0%;
+    
+    top: 0;
+    background-color: #ff95b9;
+    border-radius: 16px;
+    
+    }
+    
+    .datosventas img{
+    position: absolute;
+    left: 58%;
+    top: 40%;
+
+    }
+    
+    .datosventas h3{
+     position: absolute;
+    left: 66%;
+    top: 52%;
+    font-family: 'Roboto';
+    font-size: 16px;
+    }
+    
+    
+    .datosventas h4{
+    position: absolute;
+    left: 10%;
+    right: 100%;
+    top: 80%;
+    width: 100%;
+    
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+    
+    
+    color: #000000;
+    }
+    
+    
+    
+    
+    .datostrafico{
+        position: absolute;
+        width: 25%;
+        height: 30%;
+        left: 40%;
+        top: 20%;
+        
+        background: #ff95b9;
+        
+        
+        box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+        border-radius: 14px;
+    }
+    .datosventas{
+        position: absolute;
+        width: 25%;
+        height: 30%;
+        left: 70%;
+        top: 20%;
+        
+        background: #ff95b9;
+        
+        
+        box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+        border-radius: 14px;
+    }
+
+
+
+    /**************************************/
+
+    
+.datostrafico h1{
+    
+    position: absolute;
+    font-family: 'Roboto';
+    top: 5%;
+    left: 10%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    
+    color: #000000;
+    }
+    
+    .datostrafico .icon{
+        position: absolute;
+        background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23000&width=120") no-repeat center center/contain;
+    
+        width: 20%;
+        height: 20%;
+        right: 0;
+     
+    }
+    
+    .datostrafico h2{
+    position: absolute;
+    left: 12.86%;
+    right: 81.18%;
+    top: 23.48%;
+    bottom: 67.77%;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    
+    color: #000000;
+    
+    }
+    
+    .datostrafico .line{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 103px;
+    
+    border: 1px solid #DDDBE2;
+    }
+    
+    .datostrafico .stat{
+    position: absolute;
+    width: 80%;
+    height: 5%;
+    left: 10%;
+    right: 60%;
+    top: 70%;
+    background-color: #C8C0DF;
+    border-radius: 16px;
+    
+    }
+    
+   .datostrafico .stat .actual{
+        position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 0%;
+    
+    top: 0;
+    background-color: #ff95b9;
+    border-radius: 16px;
+    
+    }
+    
+    .datostrafico img{
+    position: absolute;
+    left: 58%;
+    top: 40%;
+    background-image: url('../img/Union.png');
+    }
+    
+    .datostrafico h3{
+     position: absolute;
+    left: 66%;
+    top: 52%;
+    font-family: 'Roboto';
+    font-size: 16px;
+    }
+    
+    
+    .datostrafico h4{
+    position: absolute;
+    left: 10%;
+    right: 100%;
+    top: 80%;
+    width: 100%;
+    
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+    
+    
+    color: #000000;
+    }
+    
+    
+    
+    
+    .datostrafico{
+        position: absolute;
+        width: 25%;
+        height: 30%;
+        left: 40%;
+        top: 20%;
+        
+        background: #ff95b9;
+        
+        
+        box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+        border-radius: 14px;
+    }
+    .datosventas{
+        position: absolute;
+        width: 25%;
+        height: 30%;
+        left: 70%;
+        top: 20%;
+        
+        background: #ff95b9;
+        
+        
+        box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+        border-radius: 14px;
+    }
+
+
+
+    /***************/
+
+.datostrafico .porcentajes{
+    width: 120px;
+    height: 100px;
+    right: 0;
+    top: 15%;
 
 }
 
-.nav .logo {
-  background: url('https://api.iconify.design/carbon/user-avatar-filled-alt.svg?color=%23ff95b9&width=48') no-repeat center center / contain;
-  width: 48px;
-  height: 48px;
-  left: 70%;
-  top: 15%;
-  position: absolute;
-  display: block;
+.datostrafico h3{
+position: absolute;
+left: 10%;
+right: 0;
+top: 60%;
+bottom: 60.11%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+
+
+color: #000000;
 }
 
-/* .nav .login li{
+.datostrafico h4{
+    position: absolute;
+    left: 10%;
+    right: 0;
+    top: 70%;
+    bottom: 60.11%;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+    
+    
+    color: #000000;
+    }
+
+
+    .Panel .grafico{
+        position: absolute;
+        background-image: url('../img/Grafica.jpg') no-repeat;
+        left: 15%;
+        right: 10%;
+        width: 80%;
+        height: 40%;
+        top: 52%;
+
+    }
+    .nav .logo{
+      background: url('https://api.iconify.design/carbon/user-avatar-filled-alt.svg?color=%23ff95b9&width=48') no-repeat center center / contain;
+         width: 48px;
+         height: 48px;
+          left: 70%;
+          top: 15%;
+          position: absolute;
+          display: block;
+        }
+
+       /* .nav .login li{
           position: absolute;
           list-style-type: style none;
         
@@ -740,38 +728,39 @@ body {
           gap: 2rem;
           align-items: center;
 
-}*/
+        }*/
 
 
-.nav .logo .login ul {
-  position: absolute;
-  width: 400%;
-  height: 100%;
-  top: -100%;
-  right: -160%;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-  display: none;
-  /*Cambiar a none*/
-}
+        .nav .logo .login ul{
+          position: absolute;
+          width: 400%;
+          height: 100%;
+          top: -100%;
+          right:-160%;
+          background-color: #fff;
+          border-radius: 12px;
+          box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+          display: block;            /*Cambiar a none*/
+        }
 
+        .nav .logo .login ul li{
+          font-family: 'Roboto';
+          font-size: 12px;
+          color:#ff95b9;
+          list-style: none;
+          float: left; 
+          display: block;           /*Cambiar a none*/
+          padding-left: 10px;
+          padding-top: 10px;
+          
+        }
 
-.nav .logo .login ul li {
-  font-family: 'Roboto';
-  font-size: 12px;
-  color: #ff95b9;
-  list-style: none;
-  float: left;
-  display: none;
-  /*Cambiar a none*/
-  padding-left: 10px;
-  padding-top: 10px;
-}
+      
 
-.nav .logo:hover>.login {
-  /*al pasar el mouse aparecera el menu*/
-  display: block;
-  background-color: #ff95b9;
-  color: #FFF;
-}
+        .nav .logo:hover> .login ul li{     /*al pasar el mouse aparecera el menu*/
+          display: block;   
+          background-color: #ff95b9;
+          color: #FFF;              
+        }
+
+        
