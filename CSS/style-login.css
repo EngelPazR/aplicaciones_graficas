@@ -212,6 +212,18 @@ button.derecha:hover{
   align-self: flex-start;
 }
 
+.botonesmodalgrid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.botonesmodalgrid button{
+  max-width: 95%;
+  width: 10rem;
+}
+
+
 /*Medias Querys*/
 
 @media (max-width: 1200px) {

@@ -128,6 +128,16 @@
   font-size: 3.5rem;
 }
 
+/* Modal is closed at lose target*/
+.modal-exit:link, .modal-exit:active, .modal-exit:visited, .modal-exit:hover {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #F92A2A; 
+}
+
 
 /*carousel productos*/
 

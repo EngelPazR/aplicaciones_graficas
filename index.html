@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
   <link rel="icon" href="./img/Logo.png">
   <link rel="stylesheet" href="/css/normalize.css">
@@ -427,7 +429,7 @@
   </div>
 
   <div id="modal_container" class="modal-container">
-    <div class="modal">
+    <div class="modal" id="mymodal">
 
       <div class="modalencabezado">
         <h1>Oferta Especial</h1>
@@ -486,8 +488,15 @@
 
     close.addEventListener('click', () => {
       modal_container.classList.remove('show');
-
     });
+
+    $(document).click(function () {
+      var obj = $("#mymodal");
+      if (!obj.is(event.target) && !obj.has(event.target).length) {
+        modal_container.classList.remove('show');
+      }
+    });
+
   </script>
 
 
@@ -500,6 +509,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
   <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
@@ -534,7 +544,7 @@
   <script type="text/javascript">
 
     function cuentaregresiva() {
-      var fecha = new Date('2022-06-30');
+      var fecha = new Date('2022-07-29');
       var hoy = new Date();
       var resta = fecha.getTime() - hoy.getTime();
       var dias = Math.floor(resta / (1000 * 60 * 60 * 24));
