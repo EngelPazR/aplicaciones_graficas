@@ -9,7 +9,7 @@ function videollamada() {
         llamada.play();
         buttoncerrar.style.display = "block";
     }, function (error) {
-        console.log(error);
+        alert('No se pudo acceder a la camara');
     });
 }
 
