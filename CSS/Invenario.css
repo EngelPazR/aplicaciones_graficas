@@ -690,3 +690,62 @@ dialog {
 /* #btn-modal {
   display: none;
 } */
+
+.drag-area{
+  width: 390px;
+  height: 130px;
+  background-color:#f3f3f3;
+  right: 200px;
+  top: 230px;
+  position: fixed;
+  box-shadow: rgba(255, 255, 255, 0.1);
+  border:2px dashed #ff95b9;
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.drag-area.active{
+  border: 2px solid #ff95b9;
+}
+
+.drag-area .icon{
+  font-size: 40px;
+  color: #ff95b9 ;
+}
+
+.drag-area header{
+  font-size: 15px;
+  font-weight: 500;
+  color: #ff95b9;
+}
+
+.drag-area span{
+  font-size: 15px;
+  font-weight: 500;
+  color: #ff95b9;
+  margin: 4px 0 6px 0;
+}
+
+.drag-area button{
+  padding: 2.5px 2px;
+  font-size: 15px;
+  font-size: 500;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #ff95b9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.drag-area img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}

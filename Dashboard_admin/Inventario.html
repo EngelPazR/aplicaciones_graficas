@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventario</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="../CSS/Invenario.css">
 </head>
 
@@ -81,7 +82,7 @@
     </div>
     <div class="sub_search">
       <span class="icon"></span>
-      <input type="text" name="" id="" placeholder="Buscar">
+      <input type="text" name="" id="" placeholder="Buscar Por ID">
     </div>
 
     <!--***************************************-->
@@ -133,12 +134,21 @@
 
          
 
-          
+  
         </thead>
       </table>
+     
+    </div>
+    <div class="drag-area">
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <header>Arrasta tu Archivo aqui</header>
+        <span>OR</span>
+        <button>Subir Archivo</button>
+        <input type="file" hidden>
     </div>
   </div>
   </div>
+  <script src="../js/files.js"></script>
 
   <!-- Modal -->
   <dialog class="modal" id="mainModal">
