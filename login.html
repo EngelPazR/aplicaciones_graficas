@@ -80,13 +80,13 @@
       <label class="" for="">Inicio de sesion <i class="fa-solid fa-user"></i></label>
 
       <h1>Elite Store</h1>
-      <form action="" class="formulario">
+      <form action="" class="formulario" id="myformulario" method="post">
 
         <div class="semicirculo"></div>
         <div class="semicirculo2"></div>
 
-        <input id="usuario" type="email" name="usuario" required pattern="^[A-Za-z]+$"
-          title="Por favor, ingrese unicamente letras" placeholder="Correo">
+        <input id="usuario" type="email" name="usuario" required title="Por favor, ingrese unicamente letras"
+          placeholder="Correo">
 
         <input id="Password" autocomplete="off" type="Password" name="contraseña" required placeholder="Contraseña">
 
@@ -141,7 +141,7 @@
           <button id="openchange">Aceptar</button>
           <button id="closeModalcodigo">Cerrar</button>
         </div>
-       
+
       </div>
     </div>
   </div>
@@ -248,6 +248,24 @@
   <script src="js/llamada.js"></script>
 
   <script src="js/modalrecuperarpass.js"></script>
+
+  <script>
+    document.getElementById("myformulario").addEventListener('submit', validar);
+
+    //validar formulario
+    function validar(e) {
+      e.preventDefault();
+      var usuario = document.getElementById('usuario').value;
+      var contraseña = document.getElementById('Password').value;
+      if (usuario == 'admin@elite.com' && contraseña == '1234') {
+        window.location.href = '/Dashboard_admin/Ventas.html';
+      } else {
+        window.location.href = '/index.html';
+      }
+    }
+
+   
+  </script>
 </body>
 
 
