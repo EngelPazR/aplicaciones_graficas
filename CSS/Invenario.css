@@ -261,14 +261,14 @@ body {
   font-size: 18px;
   line-height: 50px;
   color: #ff95b9;
-  left: 20%;
+  left: 0%;
 }
 
 .nombre input {
   position: relative;
   width: 40%;
   background: rgba(135, 135, 135, 0.2);
-  left: 40%;
+  left: 18%;
   top: -36px;
   border-radius: 16px;
   border-radius: none;
@@ -278,9 +278,10 @@ body {
 /**/
 
 .tags .Descripcion {
+  position: relative;
   height: 100%;
   width: 20%;
-  left: 0;
+  left: -15%;
 }
 
 .Descripcion h1 {
@@ -290,7 +291,7 @@ body {
   font-size: 18px;
   line-height: 50px;
   color: #ff95b9;
-  left: 0;
+  left: 10%;
 }
 
 .Descripcion input {
@@ -303,6 +304,36 @@ body {
   border-radius: none;
   border-color: #ff95b9;
 }
+
+/**/
+.tags .cantidad {
+  height: 100%;
+  width: 20%;
+  left: 100%;
+}
+
+.cantidad h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  color: #ff95b9;
+  left: -80%;
+}
+
+.cantidad input {
+  position: relative;
+  width: 30%;
+  background: rgba(135, 135, 135, 0.2);
+  left: 55%;
+  top: -36px;
+  border-radius: 16px;
+  border-radius: none;
+  border-color: #ff95b9;
+}
+
+
 
 /*********************/
 
