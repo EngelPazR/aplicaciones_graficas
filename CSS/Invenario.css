@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +32,7 @@ body {
   display: flex;
   padding: 40px 0;
 }
+
 .field {
   position: absolute;
   width: 64px;
@@ -41,10 +43,10 @@ body {
   background: none;
   align-items: center;
 }
+
 .menu .field .messages {
   position: absolute;
-  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23ff95b9&width=120")
-    no-repeat center center / contain;
+  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=%23ff95b9&width=120") no-repeat center center / contain;
   z-index: 2;
   left: 2px;
   top: 0;
@@ -54,13 +56,15 @@ body {
   box-shadow: rgba(125, 153, 180, 0.2);
   align-items: center;
 }
+
 .menu .field:hover {
   background-color: #ff95b9;
 }
+
 .menu .messages:hover {
-  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=white&width=120")
-    no-repeat center center / contain;
+  background: url("https://api.iconify.design/ant-design/message-outlined.svg?color=white&width=120") no-repeat center center / contain;
 }
+
 /**/
 .field2 {
   position: absolute;
@@ -72,11 +76,11 @@ body {
   align-items: center;
   border-radius: 64px;
 }
+
 .menu .field2 .sales {
   position: absolute;
   z-index: 2;
-  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=%23ff95b9&width=120")
-    no-repeat center center / contain;
+  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=%23ff95b9&width=120") no-repeat center center / contain;
   left: 2px;
   top: 3px;
   width: 56px;
@@ -85,12 +89,13 @@ body {
   box-shadow: rgba(125, 153, 180, 0.2);
   align-items: center;
 }
+
 .menu .field2:hover {
   background-color: #ff95b9;
 }
+
 .menu .sales:hover {
-  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=white&width=120")
-    no-repeat center center / contain;
+  background: url("https://api.iconify.design/icon-park-outline/bill.svg?color=white&width=120") no-repeat center center / contain;
 }
 
 /***/
@@ -105,11 +110,11 @@ body {
   align-items: center;
   border-radius: 64px;
 }
+
 .menu .field3 .inventory {
   position: absolute;
   z-index: 2;
-  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=%23ff95b9&width=120")
-    no-repeat center center / contain;
+  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=%23ff95b9&width=120") no-repeat center center / contain;
   left: 2px;
   top: 0;
   width: 56px;
@@ -118,12 +123,13 @@ body {
   box-shadow: rgba(125, 153, 180, 0.2);
   align-items: center;
 }
+
 .menu .field3:hover {
   background-color: #ff95b9;
 }
+
 .menu .inventory:hover {
-  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=white&width=120")
-    no-repeat center center / contain;
+  background: url("https://api.iconify.design/material-symbols/inventory.svg?color=white&width=120") no-repeat center center / contain;
 }
 
 /*Fin estilos para todos los dashboards*/
@@ -153,8 +159,7 @@ body {
 
 .nav .search {
   position: absolute;
-  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48")
-    no-repeat center center / contain;
+  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48") no-repeat center center / contain;
   width: 5%;
   height: 40%;
   top: 30%;
@@ -178,12 +183,14 @@ body {
   color: #ff95b9;
   text-align: center;
 }
+
 .nav img {
   position: absolute;
   width: 5%;
   height: 100%;
   left: 45%;
 }
+
 .nav h1 {
   position: absolute;
   width: 20%;
@@ -209,6 +216,7 @@ body {
   display: flex;
   flex: auto;
 }
+
 .tags .codigo {
   height: 100%;
   width: 20%;
@@ -379,8 +387,7 @@ body {
 
 .sub_search .icon {
   position: absolute;
-  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48")
-    no-repeat center center / contain;
+  background: url("https://api.iconify.design/bi/search.svg?color=black&width=48") no-repeat center center / contain;
   width: 10%;
   height: 100%;
   top: 0%;
@@ -431,9 +438,11 @@ body {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-.content_table  tbody tr{
+
+.content_table tbody tr {
   border-bottom: 1px solid #fFF;
 }
+
 .content_table thead {
   color: #878787;
   background-color: none;
@@ -462,25 +471,22 @@ body {
 .content_table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
 }
+
 .content_table tbody tr:nth-last-of-type(even) {
   color: #fafafa;
 }
 
-
-
-
-
-.nav .logo{
+.nav .logo {
   background: url('https://api.iconify.design/carbon/user-avatar-filled-alt.svg?color=%23ff95b9&width=48') no-repeat center center / contain;
-     width: 48px;
-     height: 48px;
-      left: 70%;
-      top: 15%;
-      position: absolute;
-      display: block;
-    }
+  width: 48px;
+  height: 48px;
+  left: 70%;
+  top: 15%;
+  position: absolute;
+  display: block;
+}
 
-   /* .nav .login li{
+/* .nav .login li{
       position: absolute;
       list-style-type: style none;
     
@@ -498,35 +504,189 @@ body {
     }*/
 
 
-    .nav .logo .login ul{
-      position: absolute;
-      width: 400%;
-      height: 100%;
-      top: -100%;
-      right:-160%;
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
-      display: block;            /*Cambiar a none*/
-    }
+.nav .logo .login ul {
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  top: -100%;
+  right: -160%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px rgba(86, 144, 198, 0.11), 6px 6px 30px rgba(125, 153, 180, 0.2);
+  display: block;
+  /*Cambiar a none*/
+}
 
-    .nav .logo .login ul li{
-      font-family: 'Roboto';
-      font-size: 12px;
-      color:#ff95b9;
-      list-style: none;
-      float: left; 
-      display: block;           /*Cambiar a none*/
-      padding-left: 10px;
-      padding-top: 10px;
-      
-    }
+.nav .logo .login ul li {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #ff95b9;
+  list-style: none;
+  float: left;
+  display: block;
+  /*Cambiar a none*/
+  padding-left: 10px;
+  padding-top: 10px;
 
-  
+}
 
-    .nav .logo:hover> .login ul li{     /*al pasar el mouse aparecera el menu*/
-      display: block;   
-      background-color: #ff95b9;
-      color: #FFF;              
-    }
+.nav .logo:hover>.login ul li {
+  /*al pasar el mouse aparecera el menu*/
+  display: block;
+  background-color: #ff95b9;
+  color: #FFF;
+}
 
+.addProv {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  position: absolute;
+  left: 58.5%;
+  top: 32.5%;
+  transition: ease-in-out 0.1s;
+}
+
+.addProv .lbl-modal {
+  text-decoration: none;
+  color: #ff95b9;
+  cursor: pointer;
+}
+
+.addProv .lbl-modal:hover {
+  color: #ff95b9;
+}
+
+/*---------------------------------------------------------*/
+
+.modal {
+  position: relative;
+}
+
+dialog {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-left: 37.5%;
+  margin-top: 7.5%;
+}
+
+.box {
+  position: relative;
+}
+
+.box .container {
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.form h2 {
+  position: relative;
+  color: #ff95b9;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 1.5px;
+  background: #000000;
+}
+
+.form .inputBox {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form .inputBox input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 7.5px;
+  border: 1px solid #ff95b9;
+  border-right: 1px solid #ff95b9;
+  border-bottom: 1px solid #ff95b9;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form .inputBox input::placeholder {
+  color:#ff95b9;
+}
+
+.form .inputBox input[type="submit"] {
+  background-color: transparent;
+  color: #ff95b9;
+  border: 2px solid #ff95b9;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addProv .open-modal {
+  margin-top: -30px;
+  background-color: #ff95b9;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #ff95b9;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form .close-modal {
+  background-color: transparent;
+  padding: 8px;
+  color: #ff95b9;
+  border: 2px solid #ff95b9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  transition: all 500ms ease;
+}
+
+/* #btn-modal:checked~.modal {
+  opacity: 1;
+  visibility: visible;
+} */
+
+/* #btn-modal {
+  display: none;
+} */

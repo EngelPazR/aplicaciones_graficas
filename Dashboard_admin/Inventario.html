@@ -33,7 +33,7 @@
       <span class="search"></span>
       <input type="search" name="Search" placeholder="Buscar en inventario">
       <span class="logo">
-        <span class="login">
+        <!-- <span class="login">
           <ul>
             <a href="../index.html">
               <li class="a">Cerrar Sesión</li>
@@ -42,7 +42,10 @@
               <li class="b">Cambiar Cuenta</li>
             </a>
           </ul>
-        </span>
+        </span> -->
+      </span>
+      <span class="addProv">
+        <button class="open-modal" onclick="openModal()">Agregar proveedor</button>
       </span>
       <img src="../img/Logo.png" alt="">
       <h1>Inventario</h1>
@@ -57,7 +60,6 @@
         <h1>Nombre</h1>
         <input type="text">
       </div>
-
 
       <div class="Descripcion">
         <h1>Descripción</h1>
@@ -84,10 +86,9 @@
 
     <!--***************************************-->
     <div class="data">
-      <table class="content_table">
+      <table class="content_table" id="transactionTable">
         <thead>
           <tr class="active_row">
-
             <th>ID</th>
             <th>Nombre</th>
             <th>Entrada a Inventario</th>
@@ -130,52 +131,84 @@
             <td style="color:#00CA39 ;">C$650</td>
           </tr>
 
-          <tr class="active_row">
-            <td>10</td>
-            <td>Savannah Nguyen</td>
-            <td>1/15/12</td>
-            <td>Lorem Ipsum</td>
-            <td style="color:#ff95b9;">Camisa,Roja,XL</td>
-            <td style="color:#00CA39 ;">C$850</td>
-          </tr>
+         
 
-          <tr class="active_row">
-            <td>10</td>
-            <td>Ken Owens</td>
-            <td>1/15/12</td>
-            <td>Lorem Ipsum</td>
-            <td style="color:#ff95b9;">Collar,Negro</td>
-            <td style="color:#00CA39 ;">C$250</td>
-          </tr>
-
-          <tr class="active_row">
-            <td>10</td>
-            <td>Kaoru Hanayama</td>
-            <td>1/15/12</td>
-            <td>Lorem Ipsum</td>
-            <td style="color:#ff95b9;">Smoking Blanco</td>
-            <td style="color:#00CA39 ;">C$2500</td>
-          </tr>
-
-          <tr class="active_row">
-            <td>10</td>
-            <td>Kaio Retsu</td>
-            <td>1/15/12</td>
-            <td>Lorem Ipsum</td>
-            <td style="color:#ff95b9;">Sandalias Negras Talla:35</td>
-            <td style="color:#00CA39 ;">C$900</td>
-          </tr>
-
-
-
-
-
+          
         </thead>
       </table>
     </div>
+  </div>
+  </div>
 
-  </div>
-  </div>
+  <!-- Modal -->
+  <dialog class="modal" id="mainModal">
+    <div class="box">
+      <div class="container">
+        <div class="form">
+          <h2>Agregar proveedor</h2>
+          <form id="transactionForm">
+            <div class="inputBox">
+              <input type="text" placeholder="Nombre de proveedor" name="provName" id="provName">
+            </div>
+            <div class="inputBox">
+              <input type="date" placeholder="Fecha de Entrada" name="date" id="date">
+            </div>
+            <div class="inputBox">
+              <input type="text" placeholder="Descripción" name="desc" id="desc">
+            </div>
+            <div class="inputBox">
+              <input type="text" placeholder="Etiquetas" name="etiquetas" id="etiquetas">
+            </div>
+            <div class="inputBox">
+              <input type="text" placeholder="Precio" name="price" id="price" value="C$">
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="Ingresar datos a la tabla">
+            </div>
+            <button class="close-modal" onclick="closeModal()">Cerrar modal</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Abrir / Cerrar Modal -->
+  <script>
+    const modal = document.getElementById("mainModal");
+    const openModal = () => {
+      modal.showModal();
+    }
+
+    const closeModal = () => {
+      modal.close();
+    }
+  </script>
+
+  <!-- Agregar proveedores a la tabla -->
+  <script>
+    const form = document.getElementById("transactionForm");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      let transactionFormData = new FormData(form);
+      let transactionTableRef = document.getElementById('transactionTable');
+      let newTransactionRowRef = transactionTableRef.insertRow(-1);
+      let oRows = document.getElementById('transactionTable').getElementsByTagName('tr');
+      let iRowCount = oRows.length - 1;
+
+      let newTypeCellRef = newTransactionRowRef.insertCell(0);
+      newTypeCellRef.textContent = iRowCount;
+      newTypeCellRef = newTransactionRowRef.insertCell(1);
+      newTypeCellRef.textContent = transactionFormData.get("provName");
+      newTypeCellRef = newTransactionRowRef.insertCell(2);
+      newTypeCellRef.textContent = transactionFormData.get("date");
+      newTypeCellRef = newTransactionRowRef.insertCell(3);
+      newTypeCellRef.textContent = transactionFormData.get("desc");
+      newTypeCellRef = newTransactionRowRef.insertCell(4);
+      newTypeCellRef.textContent = transactionFormData.get("etiquetas");
+      newTypeCellRef = newTransactionRowRef.insertCell(5);
+      newTypeCellRef.textContent = transactionFormData.get("price");
+    })
+  </script>
 
 </body>
 
