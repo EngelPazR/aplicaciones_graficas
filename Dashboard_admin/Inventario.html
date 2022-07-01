@@ -69,7 +69,7 @@
     </div>
     <div class="tags2">
       <div class="Tasa">
-        <h1>Tasa de Envío</h1>
+        <h1>Proveedor</h1>
         <input type="text">
       </div>
 
@@ -78,11 +78,21 @@
         <input type="text">
       </div>
 
-
+      <div class="precio">
+        <h1>Precio</h1>
+        <input type="text">
+      </div>
     </div>
+
     <div class="sub_search">
       <span class="icon"></span>
-      <input type="text" name="" id="" placeholder="Buscar Por ID">
+      <input type="text" name="" id="" placeholder="Buscar Por Cod">
+    </div>
+
+    <div class="mibotones">
+      <button>Agregar</button>
+      <button>Editar</button>
+      <button>Eliminar</button>
     </div>
 
     <!--***************************************-->
@@ -90,12 +100,14 @@
       <table class="content_table" id="transactionTable">
         <thead>
           <tr class="active_row">
-            <th>ID</th>
+            <th>Codigo</th>
             <th>Nombre</th>
             <th>Entrada a Inventario</th>
             <th>Descripcion</th>
             <th>Etiquetas</th>
             <th>Precio</th>
+            <td>Imagen</td>
+            <td>Proveedor</td>
           </tr>
           <tr class="active_row">
             <td>10</td>
@@ -104,14 +116,26 @@
             <td>Lorem Ipsum</td>
             <td style="color:#ff95b9;">Camisa,Roja,XL</td>
             <td style="color:#00CA39 ;">C$850</td>
+            <th>
+              <img src="img/as.png" alt="imagen">
+            </th>
+            <th>
+              Juan Pablo
+            </th>
           </tr>
           <tr class="active_row">
             <td>1</td>
-            <td>Renata Lechado</td>
+            <td>Savannah Nguyen</td>
             <td>15/08/21</td>
             <td>Lorem Ipsum</td>
             <td style="color:#ff95b9;">Gorro,Negro,XL</td>
             <td style="color:#00CA39 ;">C$950</td>
+            <th>
+              <img src="img/as.png" alt="imagen">
+            </th>
+            <th>
+              Juan Pablo
+            </th>
           </tr>
 
           <tr class="active_row">
@@ -121,6 +145,12 @@
             <td>Lorem Ipsum</td>
             <td style="color:#ff95b9;">Pantalon,Gris,XL</td>
             <td style="color:#00CA39 ;">C$500</td>
+            <th>
+              <img src="img/as.png" alt="imagen">
+            </th>
+            <th>
+              Juan Pablo
+            </th>
           </tr>
 
           <tr class="active_row">
@@ -130,21 +160,23 @@
             <td>Lorem Ipsum</td>
             <td style="color:#ff95b9;">Zapatos,Negros,Talla:37</td>
             <td style="color:#00CA39 ;">C$650</td>
+            <th>
+              <img src="img/as.png" alt="imagen">
+            </th>
+            <th>
+              Juan Pablo
+            </th>
           </tr>
-
-         
-
-  
         </thead>
       </table>
-     
+
     </div>
     <div class="drag-area">
-        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-        <header>Arrasta tu Archivo aqui</header>
-        <span>OR</span>
-        <button>Subir Archivo</button>
-        <input type="file" hidden>
+      <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+      <header>Arrasta tu Archivo aqui</header>
+      <span>OR</span>
+      <button>Subir Archivo</button>
+      <input type="file" hidden>
     </div>
   </div>
   </div>

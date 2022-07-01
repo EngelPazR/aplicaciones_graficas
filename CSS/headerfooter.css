@@ -164,6 +164,15 @@ html a {
 
 .hamburger-menu{
     display: none;
+    z-index: 5;
+}
+
+.menu__box{
+    z-index: 9999 !important;
+}
+
+.contenedor-productos{
+    z-index: -1;
 }
 
 @media (max-width: 1200px) {
@@ -207,6 +216,7 @@ html a {
 
     #menu__toggle:checked~.menu__box {
         left: 0 !important;
+       
     }
 
     .menu__btn {

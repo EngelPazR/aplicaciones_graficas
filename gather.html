@@ -69,7 +69,7 @@
           <ul class="menu__box">
             <li><a class="menu__item" href="index.html">Home</a></li>
             <li><a class="menu__item" href="login.html">Login</a></li>
-            <li><a class="menu__item" href="favoritos.html">favoritos</a></li>
+            <li><a class="menu__item" href="favoritos.html">Favoritos</a></li>
             <li><a class="menu__item" href="carrito.html">Carrito</a></li>
             <li class="inputlogo">
               <input type="text" class="inputborder" placeholder="Buscar">
@@ -79,7 +79,6 @@
             </li>
           </ul>
         </div>
-
       </ul>
     </nav>
   </header>
@@ -172,7 +171,11 @@
 
         <video id="llamada"></video>
 
-
+        <div class="bordervideo">
+          <button id="capturar" onclick="CapturarImagenVideo()">
+            Capturar
+          </button>
+        </div>
       </div>
 
       <div class="botonesllamada">
@@ -235,13 +238,13 @@
 
       for (var i = 0, element; element = elements[i++];) {
         if ((element.type === "text" && element.value === "") || (element.type === "tel" && element.value === "") || (element.type === "number" && element.value === "") || (element.type === "textarea" && element.value === "") || (element.type === "email" && element.value === "")) {
-          flag=false;
+          flag = false;
           event.preventDefault();
-          document.getElementsByClassName("MensajeValidacion")[0].style.display="block";
+          document.getElementsByClassName("MensajeValidacion")[0].style.display = "block";
           break;
-        }else{
-          document.getElementsByClassName("MensajeValidacion")[0].style.display="none";
-        }     
+        } else {
+          document.getElementsByClassName("MensajeValidacion")[0].style.display = "none";
+        }
       }
     }
   </script>

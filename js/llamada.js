@@ -1,13 +1,15 @@
 function videollamada() {
     var llamada = document.getElementById('llamada');
     var buttoncerrar = document.getElementById('cerrarllamada');
+    var capturar = document.getElementById('capturar');
     /*webcam*/
     llamada.style.display = "block";
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
-    navigator.getUserMedia({ video: true, audio: true }, function (stream) {
+    navigator.getUserMedia({ video: true }, function (stream) {
         llamada.srcObject = stream;
         llamada.play();
         buttoncerrar.style.display = "block";
+        capturar.style.display = "block";
     }, function (error) {
         alert('No se pudo acceder a la camara');
     });
@@ -16,11 +18,21 @@ function videollamada() {
 function terminarllamada() {
     var llamada = document.getElementById('llamada');
     var buttoncerrar = document.getElementById('cerrarllamada');
+    var capturar = document.getElementById('capturar');
     llamada.srcObject.getTracks().forEach(function (track) {
         track.stop();
         buttoncerrar.style.display = "none";
+        capturar.style.display = "none";
     });
     llamada.style.display = "none";
+}
+
+function CapturarImagenVideo() {
+    var llamada = document.getElementById('llamada');
+    llamada.pause();
+    llamada.srcObject.getTracks().forEach(function (track) {
+        track.stop();
+    });
 }
 
 const openllamada = document.getElementById('openllamada');

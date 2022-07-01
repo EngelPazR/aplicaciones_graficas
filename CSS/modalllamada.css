@@ -108,12 +108,16 @@
     height: 25rem;
 }
 
-#cerrarllamada {
+#cerrarllamada,#capturar {
     display: none;
     margin: 0 auto;
     width: 60%;
     background-color: #ef70c1;
     border-style: none;
+}
+
+#capturar:hover , #cerrarllamada:hover {
+    cursor: pointer;
 }
 
 .video video {
